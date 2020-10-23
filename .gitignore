@@ -1,6 +1,6 @@
 syntax: glob
 
-
+**/My Advisor Results/**
 #*~
 #*.a
 #rtest*.tar.gz*
