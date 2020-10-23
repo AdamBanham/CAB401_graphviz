@@ -1,6 +1,6 @@
 syntax: glob
 
-**/My Advisor Results/**
+cmd/dot/My Advisor Results - dot/**
 #*~
 #*.a
 #rtest*.tar.gz*
@@ -270,3 +270,13 @@ lib/color_lib
 
 # Python typechecking cache (MyPy)
 .mypy_cache/
+lib/pathplan/My Advisor Results - Pathplan/annotations.advidb2
+lib/pathplan/My Advisor Results - Pathplan/My Advisor Results - Pathplan.advixeproj
+lib/pathplan/My Advisor Results - Pathplan/project_read_only.dflgadvixe
+lib/pathplan/My Advisor Results - Pathplan/project_read_only.infoadvixe
+lib/sparse/My Advisor Results - gvsparse/My Advisor Results - gvsparse.advixeproj
+plugin/dot_layout/My Advisor Results - gvplugin_dot_layout/e000/e000.advixeexp
+plugin/dot_layout/My Advisor Results - gvplugin_dot_layout/My Advisor Results - gvplugin_dot_layout.advixeproj
+plugin/dot_layout/My Advisor Results - gvplugin_dot_layout/project_read_only.dflgadvixe
+plugin/dot_layout/My Advisor Results - gvplugin_dot_layout/project_read_only.infoadvixe
+plugin/pango/My Advisor Results - gvplugin_pango/My Advisor Results - gvplugin_pango.advixeproj
