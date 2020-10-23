@@ -1,0 +1,3101 @@
+digraph luffarschack {
+	node [shape=none];
+	"baabb--ba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"baabb--ba-" -> "abbaa-a-b-";
+	"baabb--ba-" -> "ab-aaba--b";
+	"baabb--ba-" -> "abbaaba---";
+	"baabb--ba-" -> "ab--a-abba";
+	"baabb--ba-" -> "a-bba-a-ba";
+	"baabb--ba-" -> "ab-aa-a-bb";
+	"baabb--ba-" -> "a--baba-ba";
+	"baabb--ba-" -> "a-baa-ab-b";
+	"baabb--ba-" -> "ab-ba-ab-a";
+	"a-bba-aba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-bba-aba-" -> "bbbaa---ab";
+	"a-bba-aba-" -> "bbb-aa--ab";
+	"a-bba-aba-" -> "baabb--ba-";
+	"a-bba-aba-" -> "b-abb-ab-a";
+	"a-bba-aba-" -> "bbaa--a-bb";
+	"a-bba-aba-" -> "bbba--a-ab";
+	"a-bba-aba-" -> "b-abb--baa";
+	"a-bba-aba-" -> "bbb--aa-ab";
+	"a-bba-aba-" -> "b--baaabb-";
+	"a-a--ba-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-a--ba-b-" -> "b-a-abb-a-";
+	"a-a--ba-b-" -> "baa-abb---";
+	"a-a--ba-b-" -> "b-a-abb--a";
+	"a-a--ba-b-" -> "b-aaabb---";
+	"a-a--ba-b-" -> "ba--abb-a-";
+	"bba-ab--a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bba-ab--a-" -> "a-ababa-b-";
+	"bba-ab--a-" -> "a---ababab";
+	"bba-ab--a-" -> "a--bababa-";
+	"bba-ab--a-" -> "a--baba-ab";
+	"abaaa--b-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"abaaa--b-b" -> "bb-ba-aa-b";
+	"abaaa--b-b" -> "bb-ba--aab";
+	"abaaa--b-b" -> "bbab-a-a-b";
+	"abaaa--b-b" -> "bbab--aa-b";
+	"abaaa--b-b" -> "bbaba---ab";
+	"abaaa--b-b" -> "bba-a--bab";
+	"abaaa--b-b" -> "bb-b-aa-ab";
+	"abaaa--b-b" -> "bb-baa-a-b";
+	"ab-abbaa--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ab-abbaa--" -> "bbbaab--a-";
+	"ab-abbaa--" -> "ba-a-b-bba";
+	"ab-abbaa--" -> "baababb---";
+	"ab-abbaa--" -> "bb--bbaa-a";
+	"ab-abbaa--" -> "baaa-b-bb-";
+	"ab-abbaa--" -> "baa-bbab--";
+	"ab-abbaa--" -> "baab-bb--a";
+	"ab-abbaa--" -> "ba-babb-a-";
+	"ab-abbaa--" -> "ba-b-bb-aa";
+	"b---a-----" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b---a-----" -> "a----b--a-";
+	"b---a-----" -> "a---b---a-";
+	"b---a-----" -> "ab------a-";
+	"b---a-----" -> "a-b-----a-";
+	"b---a-----" -> "a------ba-";
+	"ba-bb--baa" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ba-bb--baa" -> "abaabb-a--";
+	"ba-bb--baa" -> "ab-a-baa-b";
+	"ba-bb--baa" -> "aab-b-ab-a";
+	"ba-bb--baa" -> "abaab-ba--";
+	"ba-bb--baa" -> "aab-b--baa";
+	"ba-bb--baa" -> "aa-bb-ab-a";
+	"ba-bb--baa" -> "ab-a-baab-";
+	"ba-bb--baa" -> "abba--aa-b";
+	"ba-bb--baa" -> "abba--aab-";
+	"aaa-ab--bb" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aaa-ab--bb" -> "bbb-ab--aa";
+	"aaa-ab--bb" -> "b-ab-bbaa-";
+	"aaa-ab--bb" -> "baaa-b-bb-";
+	"aaa-ab--bb" -> "b--a-babba";
+	"aaa-ab--bb" -> "bb--bbaa-a";
+	"aaa-ab--bb" -> "ba-babb-a-";
+	"aaa-ab--bb" -> "b-ababb-a-";
+	"aaa-ab--bb" -> "baa-bbab--";
+	"aaa-ab--bb" -> "ba-b-bbaa-";
+	"b-a--a--b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-a--a--b-" -> "a---aabb--";
+	"b-a--a--b-" -> "a---aab-b-";
+	"b-a--a--b-" -> "a---aab--b";
+	"aa--ba-bab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aa--ba-bab" -> "b-ab-aa-bb";
+	"aa--ba-bab" -> "bb--aaabb-";
+	"aa--ba-bab" -> "bba-a--bba";
+	"aa--ba-bab" -> "babb-a-a-b";
+	"aa--ba-bab" -> "bba--a-bba";
+	"aa--ba-bab" -> "b--baa-abb";
+	"aa--ba-bab" -> "b-aa--bbab";
+	"aa--ba-bab" -> "bb-aaa-bb-";
+	"aa--ba-bab" -> "ba-ab--bab";
+	"bb---aab-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb---aab-a" -> "aaa--abb-b";
+	"bb---aab-a" -> "ab--baab-a";
+	"bb---aab-a" -> "ab---aabba";
+	"bb---aab-a" -> "aaab-a-b-b";
+	"ba-ba-ba--" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aa-a-b-bba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aa-a-b-bba" -> "baab-bba--";
+	"aa-a-b-bba" -> "ba-a-bb-ab";
+	"aa-a-b-bba" -> "ba-b-bb-aa";
+	"aa-a-b-bba" -> "b--a-babba";
+	"aa-a-b-bba" -> "ba-b-bbaa-";
+	"aa-a-b-bba" -> "bb--bbaa-a";
+	"aa-a-b-bba" -> "baab-bb--a";
+	"aa-a-b-bba" -> "bbba-b-aa-";
+	"aa-a-b-bba" -> "baaa-b-bb-";
+	"bb-aab---a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb-aab---a" -> "aa-b-baab-";
+	"bb-aab---a" -> "aa-b-baa-b";
+	"bb-aab---a" -> "aa---baabb";
+	"bb-aab---a" -> "aa-bbbaa--";
+	"a--abbb-aa" [label=<<TABLE BORDER="1" BGCOLOR="blue">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bbaa-a-b--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bbaa-a-b--" -> "a--abaab-b";
+	"bbaa-a-b--" -> "aaab-a-b-b";
+	"bbaa-a-b--" -> "a--b-abaab";
+	"bbaa-a-b--" -> "a--bba-aab";
+	"a--b-ab-a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a--b-ab-a-" -> "bbb--aa--a";
+	"a--b-ab-a-" -> "b-bbaa---a";
+	"a--b-ab-a-" -> "b-bbaa--a-";
+	"a--b-ab-a-" -> "bbba-aa---";
+	"a--b-ab-a-" -> "bbb-aaa---";
+	"a-bba-a-ba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a-bba-a-ba" -> "b--ab-bbaa";
+	"a-bba-a-ba" -> "b-a-babba-";
+	"a-bba-a-ba" -> "b-aab-bb-a";
+	"a-bba-a-ba" -> "bab---abba";
+	"a-bba-a-ba" -> "b-baaa--bb";
+	"a-bba-a-ba" -> "bbbaa--ab-";
+	"a-bba-a-ba" -> "bab-a-a-bb";
+	"a-bba-a-ba" -> "baa-b-bba-";
+	"a-bba-a-ba" -> "bab-aa-bb-";
+	"aa-b-abba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aa-b-abba-" -> "b-abb--baa";
+	"aa-b-abba-" -> "bbb--aa-ab";
+	"aa-b-abba-" -> "bbb--a-aab";
+	"aa-b-abba-" -> "b-abb-ab-a";
+	"aa-b-abba-" -> "bb-a-aa-bb";
+	"aa-b-abba-" -> "bbba-aa--b";
+	"aa-b-abba-" -> "b--baaabb-";
+	"aa-b-abba-" -> "bb-aa--abb";
+	"aa-b-abba-" -> "bbba-a-a-b";
+	"b--ba--aba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b--ba--aba" -> "a-aa-bbb-a";
+	"b--ba--aba" -> "aabbb--aa-";
+	"b--ba--aba" -> "aa-bb--aab";
+	"b--ba--aba" -> "a-aab-bb-a";
+	"a------ba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a------ba-" -> "b--a--a--b";
+	"a------ba-" -> "b-----a-ab";
+	"a------ba-" -> "b----a--ab";
+	"a------ba-" -> "b-----aa-b";
+	"a------ba-" -> "b---a-ab--";
+	"a------ba-" -> "ba----a--b";
+	"a------ba-" -> "b-----aba-";
+	"aba-ab-ab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aba-ab-ab-" -> "ba---bbbaa";
+	"aba-ab-ab-" -> "bb-aabb--a";
+	"aba-ab-ab-" -> "ba-bbba--a";
+	"aba-ab-ab-" -> "baba-ba--b";
+	"aba-ab-ab-" -> "bba-abba--";
+	"aba-ab-ab-" -> "bba-abb--a";
+	"aba-ab-ab-" -> "bbaa-bb-a-";
+	"aba-ab-ab-" -> "bba-abb-a-";
+	"aba-ab-ab-" -> "bb-aabb-a-";
+	"bba--a-a-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"bba--a-a-b" -> "a--baa-bba";
+	"bba--a-a-b" -> "aa-b-abba-";
+	"bba--a-a-b" -> "a--baabb-a";
+	"bba--a-a-b" -> "aa-b-a-bab";
+	"a-a-a--b-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-a-a--b-b" -> "bba--aab--";
+	"a-a-a--b-b" -> "b--ba-a-ab";
+	"a-a-a--b-b" -> "b-aba---ab";
+	"a-a-a--b-b" -> "bb-ba--aa-";
+	"a-a-a--b-b" -> "b-aba--a-b";
+	"ba-aab---b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"ba-aab---b" -> "ab-abb--aa";
+	"ba-aab---b" -> "abaa-b-b-a";
+	"ba-aab---b" -> "a-aa-bbb-a";
+	"ba-aab---b" -> "abba-b--aa";
+	"aa-b-a-bab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aa-b-a-bab" -> "bbab-a-a-b";
+	"aa-b-a-bab" -> "bb-ba-aa-b";
+	"aa-b-a-bab" -> "bb-b--aaab";
+	"aa-b-a-bab" -> "bbab--aa-b";
+	"aa-b-a-bab" -> "bb-baaa--b";
+	"aa-b-a-bab" -> "bbab-aa--b";
+	"aa-b-a-bab" -> "bb-b-aa-ab";
+	"aa-b-a-bab" -> "bb-baa-a-b";
+	"bb-b-a-aba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb-b-a-aba" -> "aabbba-a--";
+	"bb-b-a-aba" -> "ab-a-ab-ba";
+	"bb-b-a-aba" -> "ab-aba-b-a";
+	"bb-b-a-aba" -> "aa-b-a-abb";
+	"bb-b-a-aba" -> "aa-bbaba--";
+	"b-b-ba-a-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-b-ba-a-a" -> "aa-abab-b-";
+	"b-b-ba-a-a" -> "aabb-aba--";
+	"b-b-ba-a-a" -> "aa--babab-";
+	"b-b-ba-a-a" -> "aa-b-abab-";
+	"aa-ab-bb-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aa-ab-bb-a" -> "b-aab-bb-a";
+	"aa-ab-bb-a" -> "ba-ab-bba-";
+	"aa-ab-bb-a" -> "bbba-a--ba";
+	"aa-ab-bb-a" -> "bab--a-bba";
+	"aa-ab-bb-a" -> "bab---abba";
+	"aa-ab-bb-a" -> "b--ab-bbaa";
+	"aa-ab-bb-a" -> "baba-a--bb";
+	"aa-ab-bb-a" -> "baaab-bb--";
+	"aa-ab-bb-a" -> "bbbaa--ab-";
+	"bab---baba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bab---baba" -> "aa-ab-b-ba";
+	"bab---baba" -> "aa-abbb--a";
+	"bab---baba" -> "aabab--b-a";
+	"bab---baba" -> "aaba--b-ba";
+	"bab---baba" -> "aa-ab-bb-a";
+	"bab---baba" -> "aa-a-bbab-";
+	"bab---baba" -> "aa-ab--bba";
+	"bab---baba" -> "aa-a-bb-ba";
+	"abbba-a--a" [label=<<TABLE BORDER="1" BGCOLOR="blue">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb--ba-aba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb--ba-aba" -> "aab-ba-ab-";
+	"bb--ba-aba" -> "aa-bbaba--";
+	"bb--ba-aba" -> "aa--babab-";
+	"bb--ba-aba" -> "aabb-aba--";
+	"bb--ba-aba" -> "aa-bba-a-b";
+	"bb--ba-aba" -> "aa-b-a-abb";
+	"bb--ba-aba" -> "aabb-a-ab-";
+	"bb--ba-aba" -> "ab-a-ab-ba";
+	"b-abb-aa-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-abb-aa-b" -> "a-baab--ab";
+	"b-abb-aa-b" -> "ab-aa--bab";
+	"b-abb-aa-b" -> "a-baa-bba-";
+	"b-abb-aa-b" -> "aab--ba-ab";
+	"b-abb-aa-b" -> "abbaa--ba-";
+	"b-abb-aa-b" -> "aa---babab";
+	"b-abb-aa-b" -> "aabb--aba-";
+	"b-abb-aa-b" -> "aab-b-aba-";
+	"bb-a-bb-aa" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb-a-bb-aa" -> "aa--bb-aab";
+	"bb-a-bb-aa" -> "a--abbb-aa";
+	"bb-a-bb-aa" -> "ab-abb--aa";
+	"bb-a-bb-aa" -> "aab-bb-aa-";
+	"bb-a-bb-aa" -> "aabbb--aa-";
+	"bb-a-bb-aa" -> "abba-b--aa";
+	"bb-a-bb-aa" -> "a-aab-bb-a";
+	"bb-a-bb-aa" -> "abaa-b-b-a";
+	"bb-a-bb-aa" -> "aa-bb--aab";
+	"aabb---aab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aabb---aab" -> "babb-a-a-b";
+	"aabb---aab" -> "bba-a--bba";
+	"aabb---aab" -> "ba-ab--bab";
+	"aabb---aab" -> "bbaa-a-bb-";
+	"aabb---aab" -> "b-aba--abb";
+	"aabb---aab" -> "bbaaa--bb-";
+	"aabb---aab" -> "baaba---bb";
+	"aabb---aab" -> "bba--a-bba";
+	"aabb---aab" -> "babba--a-b";
+	"ba--ababb-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ba--ababb-" -> "ab-aaba--b";
+	"ba--ababb-" -> "ab-baba--a";
+	"ba--ababb-" -> "a--aababb-";
+	"ba--ababb-" -> "a-bba-a-ba";
+	"ba--ababb-" -> "ab-aa-a-bb";
+	"ba--ababb-" -> "ab-aaba-b-";
+	"ba--ababb-" -> "a--baba-ba";
+	"ba--ababb-" -> "a-baaba-b-";
+	"ba--ababb-" -> "abbba-a--a";
+	"a----b--a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a----b--a-" -> "b----ba-a-";
+	"a----b--a-" -> "b---aba---";
+	"a----b--a-" -> "b----baa--";
+	"a----b--a-" -> "b----ba--a";
+	"aa-b---a-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aa-b---a-b" -> "bb-aa--b-a";
+	"aa-b---a-b" -> "bb-a-a-b-a";
+	"aa-b---a-b" -> "bb-ba--a-a";
+	"aa-b---a-b" -> "ba-ba--a-b";
+	"a-b--aba--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-b--aba--" -> "b-b--abaa-";
+	"a-b--aba--" -> "b-b-ba-a-a";
+	"a-b--aba--" -> "bab-ba---a";
+	"baa-b-bba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"baa-b-bba-" -> "a--ba-abba";
+	"baa-b-bba-" -> "ab--a-abba";
+	"baa-b-bba-" -> "abb-a-a-ba";
+	"baa-b-bba-" -> "abbaaba---";
+	"baa-b-bba-" -> "ab-aa-abb-";
+	"baa-b-bba-" -> "a-bba-a-ba";
+	"baa-b-bba-" -> "ab-aa-a-bb";
+	"baa-b-bba-" -> "ab-aaba-b-";
+	"baa-b-bba-" -> "a-baaba-b-";
+	"a----abb-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a----abb-a" -> "b-ba-a--ab";
+	"a----abb-a" -> "baba-a-b--";
+	"a----abb-a" -> "bab--a-b-a";
+	"a----abb-a" -> "bab--aab--";
+	"a----abb-a" -> "b-ba-aa--b";
+	"aaabbab---" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aaabbab---" -> "b--ababba-";
+	"aaabbab---" -> "b-a-babba-";
+	"aaabbab---" -> "b--ab-bbaa";
+	"aaabbab---" -> "bab--a-bba";
+	"aaabbab---" -> "b-baaa--bb";
+	"aaabbab---" -> "bbbaa--ab-";
+	"aaabbab---" -> "b-b-aa-bba";
+	"aaabbab---" -> "baba-a--bb";
+	"aaabbab---" -> "b-a-b-bbaa";
+	"b-abb--baa" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-abb--baa" -> "a--ba-abba";
+	"b-abb--baa" -> "ab-aaba--b";
+	"b-abb--baa" -> "abbaa-a-b-";
+	"b-abb--baa" -> "ab-aa-abb-";
+	"b-abb--baa" -> "a-bba-a-ba";
+	"b-abb--baa" -> "abbba-a--a";
+	"b-abb--baa" -> "ab-aaba-b-";
+	"b-abb--baa" -> "a--aaba-bb";
+	"b-abb--baa" -> "ab-ba-ab-a";
+	"ba-ab-bba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ba-ab-bba-" -> "aab-b-aab-";
+	"ba-ab-bba-" -> "aabbb-aa--";
+	"ba-ab-bba-" -> "aabb--aab-";
+	"ba-ab-bba-" -> "aa-b-baab-";
+	"ba-ab-bba-" -> "aaba--bba-";
+	"ba-ab-bba-" -> "aab--baab-";
+	"ba-ab-bba-" -> "aa---baabb";
+	"ba-ab-bba-" -> "aabb--aa-b";
+	"b-b--ababa" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-b--ababa" -> "aab-ba-ab-";
+	"b-b--ababa" -> "aa-abab-b-";
+	"b-b--ababa" -> "aa-bbaba--";
+	"b-b--ababa" -> "ab-a-ab-ba";
+	"b-b--ababa" -> "aa--babab-";
+	"b-b--ababa" -> "aabb-aba--";
+	"b-b--ababa" -> "aabbba-a--";
+	"b-b--ababa" -> "aa-b-abab-";
+	"ba-ab--ab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ba-ab--ab-" -> "aaba--b-ba";
+	"ba-ab--ab-" -> "aabab--b-a";
+	"ba-ab--ab-" -> "aa-ab-b-ba";
+	"ba-ab--ab-" -> "aa-a-bb-ba";
+	"b----ba-a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b----ba-a-" -> "aba--ba---";
+	"b----ba-a-" -> "a-ab-ba---";
+	"b----ba-a-" -> "a-a--bab--";
+	"b----ba-a-" -> "a-a--ba-b-";
+	"ba-a-b-bba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ba-a-b-bba" -> "aa-a-b-bba";
+	"ba-a-b-bba" -> "aa-abbb--a";
+	"ba-a-b-bba" -> "aabab--b-a";
+	"ba-a-b-bba" -> "aa-a-bbb-a";
+	"ba-a-b-bba" -> "aa-ab-bb-a";
+	"ba-a-b-bba" -> "aa-a-bbab-";
+	"ba-a-b-bba" -> "aa-ab--bba";
+	"ba-a-b-bba" -> "aa-a-bb-ba";
+	"b------a--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b------a--" -> "a---b----a";
+	"b------a--" -> "ab-------a";
+	"b------a--" -> "a-------ba";
+	"b------a--" -> "a----b---a";
+	"b------a--" -> "a------b-a";
+	"b-----aa-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-----aa-b" -> "a-ab-b---a";
+	"b-----aa-b" -> "a-ab----ba";
+	"b-----aa-b" -> "abab---a--";
+	"b-----aa-b" -> "aba---ba--";
+	"b-----aa-b" -> "aba----a-b";
+	"b-----aa-b" -> "a-ab--b--a";
+	"b--a--ba--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b--a--ba--" -> "aa--bb---a";
+	"b--a--ba--" -> "aab-b----a";
+	"b--a--ba--" -> "aabb-----a";
+	"b--a--ba--" -> "aab-----ba";
+	"b--a--ba--" -> "aab----b-a";
+	"b--a--ba--" -> "aab---b--a";
+	"bb-baaa--b" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-b-aab-ba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-b-aab-ba" -> "a-a-babb-a";
+	"b-b-aab-ba" -> "abba-ab-a-";
+	"b-b-aab-ba" -> "a-baaabb--";
+	"b-b-aab-ba" -> "a-ba-ab-ab";
+	"b-b-aab-ba" -> "aabb-ab-a-";
+	"b-b-aab-ba" -> "aab--ab-ab";
+	"b-b-aab-ba" -> "aa--bab-ab";
+	"b-b-aab-ba" -> "aa--babba-";
+	"b-b-aab-ba" -> "aab--abba-";
+	"ab-aa--bab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"ab-aa--bab" -> "bbab-aa--b";
+	"ab-aa--bab" -> "bba-a--bab";
+	"ab-aa--bab" -> "bb-b--aaab";
+	"ab-aa--bab" -> "bb-ba-aa-b";
+	"ab-aa--bab" -> "bbab-a-a-b";
+	"bba-b--aba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bba-b--aba" -> "aabb--aa-b";
+	"bba-b--aba" -> "aabb--aab-";
+	"bba-b--aba" -> "aab-b-aab-";
+	"bba-b--aba" -> "aab-bbaa--";
+	"bba-b--aba" -> "aa-bbbaa--";
+	"bba-b--aba" -> "aaba--bba-";
+	"bba-b--aba" -> "aa-bb-aa-b";
+	"bba-b--aba" -> "aa---baabb";
+	"baa-a-b--b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"baa-a-b--b" -> "aaa-a-bb-b";
+	"baa-a-b--b" -> "aaa-a-b-bb";
+	"baa-a-b--b" -> "aaaba-b--b";
+	"baa-a-b--b" -> "aaa-ab--bb";
+	"b-b-aa--ba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-b-aa--ba" -> "a-babab-a-";
+	"b-b-aa--ba" -> "aa--babba-";
+	"b-b-aa--ba" -> "a-a-babb-a";
+	"b-b-aa--ba" -> "aa--bab-ab";
+	"ba--ab-ba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ba--ab-ba-" -> "abaaab--b-";
+	"ba--ab-ba-" -> "aba-ab-ab-";
+	"ba--ab-ba-" -> "aa--ab-bab";
+	"ba--ab-ba-" -> "abaaab---b";
+	"abaaab--b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"abaaab--b-" -> "ba---bbbaa";
+	"abaaab--b-" -> "bb--abbaa-";
+	"abaaab--b-" -> "ba-bbba--a";
+	"abaaab--b-" -> "bba-abb--a";
+	"abaaab--b-" -> "bb--abba-a";
+	"abaaab--b-" -> "bba-abb-a-";
+	"abaaab--b-" -> "b-abbb-a-a";
+	"abaaab--b-" -> "bbaaabb---";
+	"abaaab--b-" -> "bba--bbaa-";
+	"a-aab-bb-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a-aab-bb-a" -> "baaab-bb--";
+	"a-aab-bb-a" -> "b-a-b-bbaa";
+	"a-aab-bb-a" -> "b-aababb--";
+	"a-aab-bb-a" -> "bab---abba";
+	"a-aab-bb-a" -> "b-baaa--bb";
+	"a-aab-bb-a" -> "b--ab-bbaa";
+	"a-aab-bb-a" -> "baba-a--bb";
+	"a-aab-bb-a" -> "bab-a-a-bb";
+	"a-aab-bb-a" -> "baba---bba";
+	"bba--a-abb" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"bba--a-abb" -> "aabb-ab-a-";
+	"bba--a-abb" -> "abba-ab-a-";
+	"bba--a-abb" -> "a--baa-bba";
+	"bba--a-abb" -> "aa-b-a-bab";
+	"bba--a-abb" -> "aab--a-bab";
+	"bba--a-abb" -> "aa-b-abba-";
+	"bba--a-abb" -> "a-ba-ab-ab";
+	"bba--a-abb" -> "ab-baab--a";
+	"bba--a-abb" -> "aab--abba-";
+	"a---b---a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a---b---a-" -> "b-----aab-";
+	"a---b---a-" -> "b-----a-ba";
+	"a---b---a-" -> "b---b-a-a-";
+	"a---b---a-" -> "ba----a-b-";
+	"a---b---a-" -> "b---a-a-b-";
+	"a---b---a-" -> "b---aa--b-";
+	"a---b---a-" -> "b--a--a-b-";
+	"bb-b--aaba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb-b--aaba" -> "aa--bb-aab";
+	"bb-b--aaba" -> "abaab--b-a";
+	"bb-b--aaba" -> "aabb---aab";
+	"bb-b--aaba" -> "aabbb--aa-";
+	"bb-b--aaba" -> "a-aa-bbb-a";
+	"bb-b--aaba" -> "a-aab-bb-a";
+	"bb-b--aaba" -> "aa--b-baab";
+	"bb-b--aaba" -> "abaa-b-b-a";
+	"bb-b--aaba" -> "aaabb--ab-";
+	"ab-aa-a-bb" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"ab-aa-a-bb" -> "bba-b-a-ab";
+	"ab-aa-a-bb" -> "bbaa--a-bb";
+	"ab-aa-a-bb" -> "baabb--ba-";
+	"ab-aa-a-bb" -> "b-abb-ab-a";
+	"ab-aa-a-bb" -> "bb-a-aa-bb";
+	"ab-aa-a-bb" -> "ba-bb--baa";
+	"ab-aa-a-bb" -> "b-abba-b-a";
+	"ab-aa-a-bb" -> "b--baaabb-";
+	"ab-aa-a-bb" -> "bb-aa--abb";
+	"aabbba-a--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aabbba-a--" -> "bb-ab--aba";
+	"aabbba-a--" -> "b---baaabb";
+	"aabbba-a--" -> "b-aa--bbba";
+	"aabbba-a--" -> "bb--baaab-";
+	"aabbba-a--" -> "ba-aba--bb";
+	"aabbba-a--" -> "babbba---a";
+	"aabbba-a--" -> "bb--baa-ba";
+	"aabbba-a--" -> "bba-b--aba";
+	"aabbba-a--" -> "b-bbbaaa--";
+	"ba--abb-ba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ba--abb-ba" -> "abaabb-a--";
+	"ba--abb-ba" -> "aab-b-ab-a";
+	"ba--abb-ba" -> "a-aab-bab-";
+	"ba--abb-ba" -> "aab-b--baa";
+	"ba--abb-ba" -> "ab-abbaa--";
+	"ba--abb-ba" -> "a-babbaa--";
+	"ba--abb-ba" -> "ab-a-baab-";
+	"ba--abb-ba" -> "a-ba-baab-";
+	"ba--abb-ba" -> "aa-bbba--a";
+	"aaabb--ab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aaabb--ab-" -> "bb--aab-ba";
+	"aaabb--ab-" -> "bababa---b";
+	"aaabb--ab-" -> "b-baa-bba-";
+	"aaabb--ab-" -> "baba--bba-";
+	"aaabb--ab-" -> "b-b-a-bbaa";
+	"aaabb--ab-" -> "bb-a--baba";
+	"aaabb--ab-" -> "bab-aabb--";
+	"aaabb--ab-" -> "bab---bbaa";
+	"bb-ba-aa-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"bb-ba-aa-b" -> "a--ba-abba";
+	"bb-ba-aa-b" -> "ab-baba--a";
+	"bb-ba-aa-b" -> "ab-aaba--b";
+	"bb-ba-aa-b" -> "ab-aa-abb-";
+	"bb-ba-aa-b" -> "ab-aa-a-bb";
+	"bb-ba-aa-b" -> "a-baa-ab-b";
+	"bb-ba-aa-b" -> "ab--a-abba";
+	"bb-ba-aa-b" -> "abbba-a--a";
+	"bb-ba-aa-b" -> "ab-aabab--";
+	"abaabb-a--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"abaabb-a--" -> "b-ab-bb-aa";
+	"abaabb-a--" -> "bbbaab--a-";
+	"abaabb-a--" -> "baababb---";
+	"abaabb-a--" -> "ba--ababb-";
+	"abaabb-a--" -> "ba-a-bb-ab";
+	"abaabb-a--" -> "ba-a-b-bba";
+	"abaabb-a--" -> "bbba-b-aa-";
+	"abaabb-a--" -> "baab-bba--";
+	"abaabb-a--" -> "ba-b-bb-aa";
+	"b--a--ab--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b--a--ab--" -> "aaa---b--b";
+	"b--a--ab--" -> "a-aa-b-b--";
+	"b--a--ab--" -> "aaa-b----b";
+	"b--a--ab--" -> "aaa----b-b";
+	"b--a--ab--" -> "aaab-----b";
+	"b--a--ab--" -> "a-aa---bb-";
+	"a-a----bab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-a----bab" -> "bbab-a--a-";
+	"a-a----bab" -> "b--ba-aa-b";
+	"a-a----bab" -> "b--ba-a-ab";
+	"aaa---b--b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aaa---b--b" -> "b-bba--a-a";
+	"aaa---b--b" -> "babba--a--";
+	"aaa---b--b" -> "baa-a-b--b";
+	"aaa---b--b" -> "b-bba-aa--";
+	"aaa---b--b" -> "bbb--aa--a";
+	"bbbaa--a--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bbbaa--a--" -> "abaab--a-b";
+	"bbbaa--a--" -> "abaab-ba--";
+	"bbbaa--a--" -> "abaabb-a--";
+	"bbbaa--a--" -> "aab-b--baa";
+	"a-b-baab-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a-b-baab-a" -> "bb-ab-aab-";
+	"a-b-baab-a" -> "bb-ab-a-ba";
+	"a-b-baab-a" -> "ba-aba--bb";
+	"a-b-baab-a" -> "baa-a-bbb-";
+	"a-b-baab-a" -> "b-bbbaa--a";
+	"a-b-baab-a" -> "b-bbbaa-a-";
+	"a-b-baab-a" -> "bb--baa-ba";
+	"a-b-baab-a" -> "bb--baaab-";
+	"a-b-baab-a" -> "babbba---a";
+	"bbbaba---a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bbbaba---a" -> "aabb-a-ab-";
+	"bbbaba---a" -> "ab-aba-b-a";
+	"bbbaba---a" -> "aa-abab-b-";
+	"bbbaba---a" -> "aa-bbaba--";
+	"bbbaba---a" -> "aa--babab-";
+	"bbbaba---a" -> "aa-b-a-abb";
+	"bbbaba---a" -> "aabbba-a--";
+	"bbbaba---a" -> "aa-b-abab-";
+	"a--b-a-b-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a--b-a-b-a" -> "bbaa-a---b";
+	"a--b-a-b-a" -> "bb-a-a-a-b";
+	"a--b-a-b-a" -> "bba--a-a-b";
+	"bab-a-b--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bab-a-b--a" -> "a-aab-bab-";
+	"bab-a-b--a" -> "abaa--bab-";
+	"bab-a-b--a" -> "a-babbaa--";
+	"bab-a-b--a" -> "abbab-aa--";
+	"aa----ba-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aa----ba-b" -> "ba-ba-ba--";
+	"aa----ba-b" -> "b-bba--a-a";
+	"aa----ba-b" -> "bbb-a--a-a";
+	"aa----ba-b" -> "bbb--a-a-a";
+	"aa----ba-b" -> "bb-ab--a-a";
+	"a-aa-b-b--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-aa-b-b--" -> "ba--aba--b";
+	"a-aa-b-b--" -> "baa-ab---b";
+	"a-aa-b-b--" -> "ba-bab-a--";
+	"a-aa-b-b--" -> "ba-aab---b";
+	"a-aa-b-b--" -> "ba--ab--ab";
+	"ba--abab--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ba--abab--" -> "a--baba-ba";
+	"ba--abab--" -> "ab-baba--a";
+	"ba--abab--" -> "a--aaba-bb";
+	"ba--abab--" -> "ab-aaba--b";
+	"aab--abba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aab--abba-" -> "b-b-aabba-";
+	"aab--abba-" -> "baba--bba-";
+	"aab--abba-" -> "bab-aabb--";
+	"aab--abba-" -> "bb--aab-ba";
+	"aab--abba-" -> "b-b-a-bbaa";
+	"aab--abba-" -> "bab---bbaa";
+	"aab--abba-" -> "bababa---b";
+	"aab--abba-" -> "b-baba-a-b";
+	"b-abb--aab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-abb--aab" -> "a--ba-abba";
+	"b-abb--aab" -> "ab-baba--a";
+	"b-abb--aab" -> "ab--aba-ba";
+	"b-abb--aab" -> "abb-a-a-ba";
+	"b-abb--aab" -> "ab--a-abba";
+	"b-abb--aab" -> "a-bba-a-ba";
+	"b-abb--aab" -> "abbba-a--a";
+	"b-abb--aab" -> "a--baba-ba";
+	"b-abb--aab" -> "ab-ba-ab-a";
+	"aa-abab-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aa-abab-b-" -> "bab--ab-ba";
+	"aa-abab-b-" -> "bab-a-bab-";
+	"aa-abab-b-" -> "b-b--ababa";
+	"aa-abab-b-" -> "b-b-aabab-";
+	"aa-abab-b-" -> "bab---baba";
+	"bab--ab--a" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a---aababb" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a---aababb" -> "bbbab-aa--";
+	"a---aababb" -> "bbbaba-a--";
+	"a---aababb" -> "bbb-baaa--";
+	"a---aababb" -> "bbb-b--aaa";
+	"a---aababb" -> "bbb-ba--aa";
+	"a---aababb" -> "bbb-b-aaa-";
+	"a---aababb" -> "bbb-baa-a-";
+	"a---aababb" -> "bbbaba---a";
+	"a-ab-aabb-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-ab-aabb-" -> "b-abba-b-a";
+	"a-ab-aabb-" -> "bba-b-a-ab";
+	"a-ab-aabb-" -> "b-abb-ab-a";
+	"a-ab-aabb-" -> "bbba-aa--b";
+	"a-ab-aabb-" -> "bba--a-abb";
+	"a-ab-aabb-" -> "bbba--a-ab";
+	"a-ab-aabb-" -> "bbb--a-aab";
+	"a-ab-aabb-" -> "bbb-aa--ab";
+	"a-ab-aabb-" -> "b--baaabb-";
+	"bbab-aa--b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"bbab-aa--b" -> "ababbaa---";
+	"bbab-aa--b" -> "ab-b-aaba-";
+	"bbab-aa--b" -> "abab-aab--";
+	"bbab-aa--b" -> "a-abbaa--b";
+	"bbab-aa--b" -> "aba-baa--b";
+	"b-ba--baba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-ba--baba" -> "aa-ab-b-ba";
+	"b-ba--baba" -> "aa-abbb--a";
+	"b-ba--baba" -> "aabab--b-a";
+	"b-ba--baba" -> "aaba--b-ba";
+	"b-ba--baba" -> "aaba-bb--a";
+	"b-ba--baba" -> "aa-ab-bb-a";
+	"b-ba--baba" -> "aaba--bb-a";
+	"b-ba--baba" -> "aa-a-bb-ba";
+	"ab--a-abab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"ab--a-abab" -> "bb-ba-aa-b";
+	"ab--a-abab" -> "bb-baaa--b";
+	"ab--a-abab" -> "bbab-aa--b";
+	"ab--a-abab" -> "bb-b--aaab";
+	"ab--a-abab" -> "bbab--aa-b";
+	"ab--a-abab" -> "bbaba---ab";
+	"ab--a-abab" -> "bba-a--bab";
+	"ab--a-abab" -> "bb-b-aa-ab";
+	"b-b-a-baba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-b-a-baba" -> "a--abbb-aa";
+	"b-b-a-baba" -> "aab-bb-aa-";
+	"b-b-a-baba" -> "aabbb--aa-";
+	"b-b-a-baba" -> "abbab---aa";
+	"b-b-a-baba" -> "aab---baab";
+	"b-b-a-baba" -> "a-aabb--ba";
+	"b-b-a-baba" -> "aa--b-baab";
+	"b-b-a-baba" -> "a-aab-bb-a";
+	"b-b-a-baba" -> "aaabb--ab-";
+	"b-aba---ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-aba---ab" -> "ab-baba-a-";
+	"b-aba---ab" -> "abbba-a-a-";
+	"b-aba---ab" -> "ab-ba-a-ab";
+	"abba--aab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"abba--aab-" -> "b-b-aa-abb";
+	"abba--aab-" -> "b-a-b-bbaa";
+	"abba--aab-" -> "b-aab-bb-a";
+	"abba--aab-" -> "bab--a-bba";
+	"abba--aab-" -> "b-baaa--bb";
+	"abba--aab-" -> "baa-b-bba-";
+	"abba--aab-" -> "baaab-bb--";
+	"abba--aab-" -> "bbbaa--ab-";
+	"abba--aab-" -> "baba---bba";
+	"bbabaa----" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bbabaa----" -> "ababbaa---";
+	"bbabaa----" -> "abab-aab--";
+	"bbabaa----" -> "a-abbaa--b";
+	"bbabaa----" -> "ababaa-b--";
+	"a---ababab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a---ababab" -> "bbabab---a";
+	"a---ababab" -> "bba--b-baa";
+	"a---ababab" -> "bba-abab--";
+	"a---ababab" -> "bbabab-a--";
+	"a---ababab" -> "bb-baba-a-";
+	"b-aa-babb-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-aa-babb-" -> "aaa-a-b-bb";
+	"b-aa-babb-" -> "aaa-a-bb-b";
+	"b-aa-babb-" -> "aaa-abb-b-";
+	"b-aa-babb-" -> "aaababb---";
+	"b-aa-babb-" -> "aaa-ab--bb";
+	"b-aa-babb-" -> "aaa-ab-b-b";
+	"b-aa-babb-" -> "aaaba-b--b";
+	"b-aa-babb-" -> "aaa-abbb--";
+	"bbab-a--ba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bbab-a--ba" -> "aab--abba-";
+	"bbab-a--ba" -> "ab-baab--a";
+	"bbab-a--ba" -> "a-ba-ab-ab";
+	"bbab-a--ba" -> "abb-aa-b-a";
+	"bbab-a--ba" -> "aab--ab-ab";
+	"bbab-a--ba" -> "aa-b-a-bab";
+	"bbab-a--ba" -> "a--baabb-a";
+	"bbab-a--ba" -> "a-baaabb--";
+	"bbab-a--ba" -> "aa--ba-bab";
+	"a-ab--a-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-ab--a-b-" -> "bba-a-b--a";
+	"a-ab--a-b-" -> "bbaaa-b---";
+	"a-ab--a-b-" -> "ba--a-bba-";
+	"a-ab--a-b-" -> "b-b--aa-ab";
+	"a-ab--a-b-" -> "bba-a-b-a-";
+	"ba-aabb---" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ba-aabb---" -> "aab--b-aab";
+	"ba-aabb---" -> "a-aabb--ba";
+	"ba-aabb---" -> "abba-b--aa";
+	"ba-aabb---" -> "aab-bb-aa-";
+	"a--bbaab-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a--bbaab-a" -> "bbba-a-a-b";
+	"a--bbaab-a" -> "bba--a-abb";
+	"a--bbaab-a" -> "b-abb-ab-a";
+	"a--bbaab-a" -> "bbaa--a-bb";
+	"a--bbaab-a" -> "bbba---aab";
+	"a--bbaab-a" -> "bbb-aa--ab";
+	"a--bbaab-a" -> "bbb--aa-ab";
+	"a--bbaab-a" -> "bb-a-aa-bb";
+	"a--bbaab-a" -> "b-abba-b-a";
+	"abaa--b---" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"abaa--b---" -> "b--ba-a-ba";
+	"abaa--b---" -> "bab-a--b-a";
+	"abaa--b---" -> "b-ba-aa--b";
+	"abaa--b---" -> "babaa--b--";
+	"abaa--b---" -> "bbaaa-b---";
+	"a-aaa-b-bb" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-aaa-b-bb" -> "bbbab-aa--";
+	"a-aaa-b-bb" -> "bbb-baaa--";
+	"a-aaa-b-bb" -> "bbb-b-aaa-";
+	"a-aaa-b-bb" -> "bbb-b-a-aa";
+	"a-aaa-b-bb" -> "bbb-b-aa-a";
+	"a-aaa-b-bb" -> "bbb-ba-aa-";
+	"a-aaa-b-bb" -> "bbb-baa-a-";
+	"a-aaa-b-bb" -> "bbb-b--aaa";
+	"bbab--aa-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"bbab--aa-b" -> "aab---abab";
+	"bbab--aa-b" -> "aa---babab";
+	"bbab--aa-b" -> "abbaa--ba-";
+	"bbab--aa-b" -> "aa-b-baba-";
+	"bbab--aa-b" -> "aabb--aba-";
+	"b-b-aa--ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-b-aa--ab" -> "a-abbaa--b";
+	"b-b-aa--ab" -> "a-a-baab-b";
+	"b-b-aa--ab" -> "aba-baa--b";
+	"b-b-aa--ab" -> "aba-baa-b-";
+	"baba-a-b--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"baba-a-b--" -> "aa-bbaba--";
+	"baba-a-b--" -> "aabbba-a--";
+	"baba-a-b--" -> "aa-bba-a-b";
+	"baba-a-b--" -> "ab-a-ab-ba";
+	"bab--abab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bab--abab-" -> "aa--babab-";
+	"bab--abab-" -> "aabb-aba--";
+	"bab--abab-" -> "aabb-a-ab-";
+	"bab--abab-" -> "aab-ba-ab-";
+	"bab--abab-" -> "aa-b-abab-";
+	"b----a----" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b----a----" -> "a---ba----";
+	"b----a----" -> "a----a-b--";
+	"ab-b-aaba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ab-b-aaba-" -> "bbaba---ab";
+	"ab-b-aaba-" -> "bb-ba--aab";
+	"ab-b-aaba-" -> "bb-baaa--b";
+	"ab-b-aaba-" -> "bb-baa-a-b";
+	"ab-b-aaba-" -> "bb-b-aa-ab";
+	"bbba--a-ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"bbba--a-ab" -> "aba-ab-ab-";
+	"bbba--a-ab" -> "aabbab--a-";
+	"bbba--a-ab" -> "abaaa--b-b";
+	"bbba--a-ab" -> "abaaa-b-b-";
+	"bbba--a-ab" -> "aab-a--bab";
+	"bbba--a-ab" -> "a-abb-ab-a";
+	"bbba--a-ab" -> "abaaab---b";
+	"bbba--a-ab" -> "a-aba--abb";
+	"bbba--a-ab" -> "a-aaa-b-bb";
+	"a-a-b-b-a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-a-b-b-a-" -> "b-b-a-aab-";
+	"a-a-b-b-a-" -> "b-b-aaa-b-";
+	"aba--ba---" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aba--ba---" -> "ba--ab--ab";
+	"aba--ba---" -> "b-a-ab-b-a";
+	"aba--ba---" -> "baabab----";
+	"aba--ba---" -> "b-a-abab--";
+	"aba--ba---" -> "bba-ab--a-";
+	"b-ababb-a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-ababb-a-" -> "a-ababa-b-";
+	"b-ababb-a-" -> "a-bba-aba-";
+	"b-ababb-a-" -> "a--baba-ab";
+	"b-ababb-a-" -> "a-bba-a-ab";
+	"b-ababb-a-" -> "a-a-ababb-";
+	"b-ababb-a-" -> "abbba-a-a-";
+	"b-ababb-a-" -> "ab-baba-a-";
+	"b-ababb-a-" -> "a--bababa-";
+	"aaabab-b--" [label=<<TABLE BORDER="1" BGCOLOR="blue">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bb-aabb--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb-aabb--a" -> "aa-b-baab-";
+	"bb-aabb--a" -> "aaba--bba-";
+	"bb-aabb--a" -> "aa-b-baa-b";
+	"bb-aabb--a" -> "aabbb-aa--";
+	"bb-aabb--a" -> "aa-bbbaa--";
+	"bb-aabb--a" -> "aab-bbaa--";
+	"bb-aabb--a" -> "aa-bb-aa-b";
+	"bb-aabb--a" -> "aa---baabb";
+	"aa-bb--aab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aa-bb--aab" -> "b-abb-aa-b";
+	"aa-bb--aab" -> "bb-b-aaab-";
+	"aa-bb--aab" -> "b-abb--aab";
+	"aa-bb--aab" -> "bb-b-a-aba";
+	"aa-bb--aab" -> "b--bb-aaab";
+	"aa-bb--aab" -> "ba-bb-aa-b";
+	"aa-bb--aab" -> "bb-b--aaba";
+	"aa-bb--aab" -> "b--bba-aab";
+	"ba--abba--" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ba--abb--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ba--abb--a" -> "aab-bba--a";
+	"ba--abb--a" -> "aa-bbba--a";
+	"ba--abb--a" -> "ab-abbaa--";
+	"ba--abb--a" -> "a-babbaa--";
+	"bb--abba-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb--abba-a" -> "aa--bb-aab";
+	"bb--abba-a" -> "aab-bb-aa-";
+	"bb--abba-a" -> "aabb---aab";
+	"bb--abba-a" -> "abba-b--aa";
+	"bb--abba-a" -> "aab---baab";
+	"bb--abba-a" -> "a-aabb--ba";
+	"bb--abba-a" -> "a--abb-baa";
+	"bb--abba-a" -> "aaabb--ab-";
+	"bb--abba-a" -> "abaa-b-b-a";
+	"b---aba---" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b---aba---" -> "a-a-bb--a-";
+	"b---aba---" -> "a-a--b-ba-";
+	"aab---b--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aab---b--a" -> "bab--ab--a";
+	"aab---b--a" -> "ba--b--aba";
+	"aab---b--a" -> "b-bab--a-a";
+	"aab---b--a" -> "bab-a-b--a";
+	"aaa-abbb--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aaa-abbb--" -> "bb--abb-aa";
+	"aaa-abbb--" -> "ba-bbba--a";
+	"aaa-abbb--" -> "bba-abba--";
+	"aaa-abbb--" -> "bb--abba-a";
+	"aaa-abbb--" -> "bb-aabb-a-";
+	"aaa-abbb--" -> "bba-abb-a-";
+	"aaa-abbb--" -> "b-baab-a-b";
+	"aaa-abbb--" -> "bb---bbaaa";
+	"aaa-abbb--" -> "bba--bbaa-";
+	"b-----ab-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-----ab-a" -> "aaa----b-b";
+	"b-----ab-a" -> "a-aa-b---b";
+	"b-----ab-a" -> "a-aab----b";
+	"b-----ab-a" -> "abaa-----b";
+	"b-----ab-a" -> "a-aa----bb";
+	"b-----ab-a" -> "a-aa--b--b";
+	"a-babbaa--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-babbaa--" -> "b-babb-a-a";
+	"a-babbaa--" -> "b-aaabb-b-";
+	"a-babbaa--" -> "bab-bb-aa-";
+	"a-babbaa--" -> "bababb--a-";
+	"a-babbaa--" -> "bab-abba--";
+	"a-babbaa--" -> "b-b-abba-a";
+	"a-babbaa--" -> "b-babb-aa-";
+	"a-babbaa--" -> "baba-bb--a";
+	"ab---aabba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ab---aabba" -> "bba--a-bba";
+	"ab---aabba" -> "babba--a-b";
+	"ab---aabba" -> "bb--aa-bba";
+	"ab---aabba" -> "bb--aaabb-";
+	"ab---aabba" -> "b-aba--abb";
+	"ab---aabba" -> "b-aa--bbab";
+	"ab---aabba" -> "ba-baa--bb";
+	"ab---aabba" -> "babb-a-a-b";
+	"ab---aabba" -> "bba--aabb-";
+	"ab---ab-a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ab---ab-a-" -> "b-ba-aab--";
+	"ab---ab-a-" -> "b-b--aab-a";
+	"ab---ab-a-" -> "b-b-aaab--";
+	"ab---ab-a-" -> "bab--aab--";
+	"ab---ab-a-" -> "b-b-aa--ab";
+	"ab-aabab--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ab-aabab--" -> "bbabab-a--";
+	"ab-aabab--" -> "bb-b-b-aaa";
+	"ab-aabab--" -> "bba-abab--";
+	"ab-aabab--" -> "ba-a-b-bab";
+	"ab-aabab--" -> "bb---babaa";
+	"ab-aabab--" -> "bbabab---a";
+	"ab-aabab--" -> "bbab-b--aa";
+	"ab-aabab--" -> "bba--bab-a";
+	"babaab----" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"babaab----" -> "aa--bb-aab";
+	"babaab----" -> "a--abbb-aa";
+	"babaab----" -> "a-aa-bbb-a";
+	"babaab----" -> "aab-bb-aa-";
+	"aba---a-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aba---a-b-" -> "b-aaa-bb--";
+	"aba---a-b-" -> "baa-a-bb--";
+	"aba---a-b-" -> "b-a-a-bb-a";
+	"aba---a-b-" -> "b-b-aa--ab";
+	"aba---a-b-" -> "bba-a-b-a-";
+	"bb---babaa" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb---babaa" -> "aaa-a-bb-b";
+	"bb---babaa" -> "aaababb---";
+	"bb---babaa" -> "aaa-abbb--";
+	"bb---babaa" -> "aaaba--b-b";
+	"bb---babaa" -> "aaabab-b--";
+	"bb---babaa" -> "aaa-ab--bb";
+	"bb---babaa" -> "aaaba-b--b";
+	"bb---babaa" -> "aaa-ab-b-b";
+	"bbb-a--a-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bbb-a--a-a" -> "a--abb-baa";
+	"bbb-a--a-a" -> "aa--b-baab";
+	"bbb-a--a-a" -> "abaab--b-a";
+	"bbb-a--a-a" -> "aab---baab";
+	"bba-a-abb-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bba-a-abb-" -> "a-bba-aba-";
+	"bba-a-abb-" -> "a--baba-ab";
+	"bba-a-abb-" -> "a-b-a-abab";
+	"bba-a-abb-" -> "a-a-ababb-";
+	"bba-a-abb-" -> "abbba-a-a-";
+	"bba-a-abb-" -> "ab-ba-a-ab";
+	"bba-a-abb-" -> "a-ababa-b-";
+	"bba-a-abb-" -> "ab--a-abab";
+	"a--baabb-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a--baabb-a" -> "bbba-a-a-b";
+	"a--baabb-a" -> "bbb-aa--ab";
+	"a--baabb-a" -> "bbba--a-ab";
+	"a--baabb-a" -> "bbb--a-aab";
+	"a--baabb-a" -> "bbbaaa---b";
+	"a--baabb-a" -> "bbba---aab";
+	"a--baabb-a" -> "bbba-aa--b";
+	"a--baabb-a" -> "bbb--aa-ab";
+	"a--baabb-a" -> "bbbaa---ab";
+	"aaaba-b-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aaaba-b-b-" -> "bb-ab-a-ba";
+	"aaaba-b-b-" -> "babbb-a--a";
+	"aaaba-b-b-" -> "ba-aa-bbb-";
+	"aaaba-b-b-" -> "bb-ab-aab-";
+	"aaaba-b-b-" -> "b-bbbaa-a-";
+	"aaaba-b-b-" -> "b-bbbaa--a";
+	"aaaba-b-b-" -> "bba-b-a-ba";
+	"aaaba-b-b-" -> "bba-b-aab-";
+	"aaaba-b-b-" -> "baa--abbb-";
+	"babb-a--a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"babb-a--a-" -> "ab-baab--a";
+	"babb-a--a-" -> "aabb-ab-a-";
+	"babb-a--a-" -> "a--baabb-a";
+	"babb-a--a-" -> "abba-ab-a-";
+	"babb-a-a-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"babb-a-a-b" -> "aabb-a-ab-";
+	"babb-a-a-b" -> "ab-aba-b-a";
+	"babb-a-a-b" -> "ab-a-ab-ba";
+	"babb-a-a-b" -> "aabb-aba--";
+	"babb-a-a-b" -> "aa-bba-a-b";
+	"babb-a-a-b" -> "aa-b-a-abb";
+	"babb-a-a-b" -> "aabbba-a--";
+	"babb-a-a-b" -> "aa-b-abab-";
+	"bba-ab---a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bba-ab---a" -> "aab--ba-ab";
+	"bba-ab---a" -> "aa---babab";
+	"ba-bbba--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ba-bbba--a" -> "abaabb-a--";
+	"ba-bbba--a" -> "ab-a-baa-b";
+	"ba-bbba--a" -> "abaa--bab-";
+	"ba-bbba--a" -> "aab-b--baa";
+	"ba-bbba--a" -> "ab-abbaa--";
+	"ba-bbba--a" -> "aab-bba--a";
+	"ba-bbba--a" -> "aa-bb-ab-a";
+	"ba-bbba--a" -> "a-babbaa--";
+	"ba-bbba--a" -> "a-ba-baa-b";
+	"a--bba-aab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a--bba-aab" -> "b-abba--ab";
+	"a--bba-aab" -> "bb-b-aaab-";
+	"a--bba-aab" -> "b-abb--aab";
+	"a--bba-aab" -> "bbab-a--ba";
+	"a--bba-aab" -> "bb-b-a-aba";
+	"a--bba-aab" -> "b--bb-aaab";
+	"a--bba-aab" -> "bb-b--aaba";
+	"a--bba-aab" -> "b-abbaa--b";
+	"ba-ab--a-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"ba-ab--a-b" -> "aa-ab-bb-a";
+	"ba-ab--a-b" -> "aabab--b-a";
+	"ba-ab--a-b" -> "aa-a-bbb-a";
+	"ba-ab--a-b" -> "aaba--bb-a";
+	"bab-ba---a" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"babbb-a--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"babbb-a--a" -> "abaabb-a--";
+	"babbb-a--a" -> "aab-b-ab-a";
+	"babbb-a--a" -> "a-aab-bab-";
+	"babbb-a--a" -> "abaab-ba--";
+	"babbb-a--a" -> "abaab--a-b";
+	"babbb-a--a" -> "aab-bba--a";
+	"babbb-a--a" -> "aa-bb-ab-a";
+	"babbb-a--a" -> "abaa--bab-";
+	"babbb-a--a" -> "aa-bbba--a";
+	"bb---bbaaa" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b--ababba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b--ababba-" -> "a-babab-a-";
+	"b--ababba-" -> "a-a-babb-a";
+	"b--ababba-" -> "abb-aa-b-a";
+	"b--ababba-" -> "aab--ab-ab";
+	"b--ababba-" -> "ab-baa--ba";
+	"b--ababba-" -> "a-baaabb--";
+	"b--ababba-" -> "aa--ba-bab";
+	"b--ababba-" -> "aa--babba-";
+	"b--ababba-" -> "aa-b-ab-ab";
+	"bba--a-bba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bba--a-bba" -> "abba-ab-a-";
+	"bba--a-bba" -> "a-baaabb--";
+	"bba--a-bba" -> "aabb-ab-a-";
+	"bba--a-bba" -> "aab--ab-ab";
+	"bba--a-bba" -> "aab--a-bab";
+	"bba--a-bba" -> "a--baabb-a";
+	"bba--a-bba" -> "aa-b-a-bab";
+	"bba--a-bba" -> "aa-b-ab-ab";
+	"bba--a-bba" -> "ab-baa--ba";
+	"b----baa--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b----baa--" -> "a-a-bb---a";
+	"b----baa--" -> "a-ab-b---a";
+	"b----baa--" -> "a-a--bb--a";
+	"b----baa--" -> "a-a--b-b-a";
+	"b----baa--" -> "a-a--b--ba";
+	"b----baa--" -> "aba--b---a";
+	"bba--aab--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bba--aab--" -> "a-a-baab-b";
+	"bba--aab--" -> "ab-b-aaba-";
+	"bba--aab--" -> "aba-baab--";
+	"bba--aab--" -> "abab-aab--";
+	"aaa-b-b---" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aaa-b-b---" -> "b-b-a--aba";
+	"aaa-b-b---" -> "b-b-a-aab-";
+	"aaa-b-b---" -> "b-baa--ab-";
+	"aaa-b-b---" -> "bab-a--ab-";
+	"aaa-b-b---" -> "b-b--aa-ba";
+	"ba-baa--bb" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"ba-baa--bb" -> "a--b-abaab";
+	"ba-baa--bb" -> "ab--babaa-";
+	"ba-baa--bb" -> "ab--baab-a";
+	"ba-baa--bb" -> "a-b-baab-a";
+	"ba-baa--bb" -> "ab---abaab";
+	"ba-baa--bb" -> "a--bbabaa-";
+	"ba-baa--bb" -> "ab---aabba";
+	"ba-baa--bb" -> "a-bbaaba--";
+	"ba-baa--bb" -> "aaab-a-b-b";
+	"aab-b-aab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aab-b-aab-" -> "b-ba-ab-ba";
+	"aab-b-aab-" -> "b-ba--baba";
+	"aab-b-aab-" -> "b-b-aab-ba";
+	"aab-b-aab-" -> "bab-b-a-ba";
+	"aab-b-aab-" -> "b-b-a-baba";
+	"a-bba-a-ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-bba-a-ab" -> "b-ab-aa-bb";
+	"a-bba-a-ab" -> "b-bba-aa-b";
+	"a-bba-a-ab" -> "bb--aaabb-";
+	"a-bba-a-ab" -> "bba-a--bba";
+	"a-bba-a-ab" -> "b-aba--abb";
+	"a-bba-a-ab" -> "b-aa--bbab";
+	"a-bba-a-ab" -> "baaba---bb";
+	"a-bba-a-ab" -> "bbaaa--bb-";
+	"a-bba-a-ab" -> "bba--aabb-";
+	"b-b--a-aab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-b--a-aab" -> "a--abaab-b";
+	"b-b--a-aab" -> "a-b--abaab";
+	"b-b--a-aab" -> "a--bbaab-a";
+	"b-b--a-aab" -> "a-b-ba-aab";
+	"bbaba----a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bbaba----a" -> "aab---abab";
+	"bbaba----a" -> "ab-aa--bab";
+	"bbaba----a" -> "abbaa--ba-";
+	"bbaba----a" -> "aa---babab";
+	"baab-bb--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"baab-bb--a" -> "aab-b--baa";
+	"baab-bb--a" -> "ab-a-baa-b";
+	"baab-bb--a" -> "abaab-ba--";
+	"baab-bb--a" -> "abaab--a-b";
+	"baab-bb--a" -> "aab-bba--a";
+	"baab-bb--a" -> "ab-a-baab-";
+	"baab-bb--a" -> "a-ba-baa-b";
+	"baab-bb--a" -> "a-ba-baab-";
+	"baab-bb--a" -> "aa-bbba--a";
+	"b-bbbaa--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-bbbaa--a" -> "a-b-babaa-";
+	"b-bbbaa--a" -> "a--b-abaab";
+	"b-bbbaa--a" -> "a-b-ba-aab";
+	"b-bbbaa--a" -> "a-b-baab-a";
+	"b-bbbaa--a" -> "ab---abaab";
+	"b-bbbaa--a" -> "a--abaab-b";
+	"b-bbbaa--a" -> "a-bbaaba--";
+	"b-bbbaa--a" -> "a--bbaab-a";
+	"b-bbbaa--a" -> "aaabbab---";
+	"ba--aba-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ba--aba-b-" -> "ab-aaba-b-";
+	"ba--aba-b-" -> "a-baaba-b-";
+	"ba--aba-b-" -> "a--aaba-bb";
+	"ba--aba-b-" -> "a--aababb-";
+	"a--abaab-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a--abaab-b" -> "baab---abb";
+	"a--abaab-b" -> "babb-a-a-b";
+	"a--abaab-b" -> "bb-aaa-bb-";
+	"a--abaab-b" -> "b-ab-aa-bb";
+	"a--abaab-b" -> "baaba---bb";
+	"a--abaab-b" -> "bbaaa--bb-";
+	"a--abaab-b" -> "ba-baa--bb";
+	"a--abaab-b" -> "bba--a-bba";
+	"a--abaab-b" -> "bba--aabb-";
+	"baaa-b-bb-" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bba-b-aab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bba-b-aab-" -> "aab-bba-a-";
+	"bba-b-aab-" -> "a-baa-bba-";
+	"bba-b-aab-" -> "aa--bbaba-";
+	"bba-b-aab-" -> "abbaa--ba-";
+	"bba-b-aab-" -> "aabb--aba-";
+	"bba-b-aab-" -> "aab---abab";
+	"bba-b-aab-" -> "a-baab--ab";
+	"bba-b-aab-" -> "aab-b-aba-";
+	"aa--bb---a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aa--bb---a" -> "b--a-bba-a";
+	"aa--bb---a" -> "bab-ab---a";
+	"aa--bb---a" -> "bab--b-a-a";
+	"aa--bb---a" -> "ba--ab--ba";
+	"aa--bb---a" -> "ba--abb--a";
+	"b--baaabb-" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-ba-ab-a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-ba-ab-a-" -> "a-babab-a-";
+	"b-ba-ab-a-" -> "a-baaabb--";
+	"b-ba-ab-a-" -> "a-ba-ab-ab";
+	"b-ba-ab-a-" -> "abba-ab-a-";
+	"a-ab----ba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a-ab----ba" -> "b-ba-a--ab";
+	"a-ab----ba" -> "ba--a-bb-a";
+	"a-ab----ba" -> "bb-aa-b--a";
+	"a-ab----ba" -> "b-a-a-bb-a";
+	"a-ab----ba" -> "bbaaa-b---";
+	"baa-a-bb--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"baa-a-bb--" -> "aaaba--bb-";
+	"baa-a-bb--" -> "aaa-a-bb-b";
+	"baa-a-bb--" -> "aaa-abbb--";
+	"baa-a-bb--" -> "aaaba-b-b-";
+	"bab-a--b-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bab-a--b-a" -> "a-ba-baa-b";
+	"bab-a--b-a" -> "abaab-ba--";
+	"bab-a--b-a" -> "abba--aa-b";
+	"bab-a--b-a" -> "abaa--bab-";
+	"a-aa--b-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-aa--b-b-" -> "b-b--ab-aa";
+	"a-aa--b-b-" -> "babaa-b---";
+	"a-aa--b-b-" -> "bab-a-ba--";
+	"a-aa--b-b-" -> "bab-a-b--a";
+	"a-aa--b-b-" -> "bab-a-b-a-";
+	"b-ba-a--ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-ba-a--ab" -> "aab--a-bab";
+	"b-ba-a--ab" -> "a-ba-ab-ab";
+	"b-ba-a--ab" -> "a--baabb-a";
+	"b-ba-a--ab" -> "aab--abba-";
+	"bab-a--ab-" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a--b-ab--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a--b-ab--a" -> "babb-aa---";
+	"a--b-ab--a" -> "babb-a---a";
+	"a--b-ab--a" -> "babb-a--a-";
+	"a--b-ab--a" -> "bbba-aa---";
+	"a--b-ab--a" -> "bbba-a---a";
+	"ab-a-baa-b" [label=<<TABLE BORDER="1" BGCOLOR="blue">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aaba-bb--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aaba-bb--a" -> "b-babb-a-a";
+	"aaba-bb--a" -> "bab-bb-aa-";
+	"aaba-bb--a" -> "bababb--a-";
+	"aaba-bb--a" -> "bababb---a";
+	"aaba-bb--a" -> "b-babb-aa-";
+	"a-a---b-ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-a---b-ab" -> "bbb-aaa---";
+	"a-a---b-ab" -> "b-bba-aa--";
+	"a-a---b-ab" -> "b-bba-a--a";
+	"a-a---b-ab" -> "b-aba-b-a-";
+	"a-a---b-ab" -> "babba-a---";
+	"ba--a-b-ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"ba--a-b-ab" -> "aa--abb-ab";
+	"ba--a-b-ab" -> "abaaa--bb-";
+	"ba--a-b-ab" -> "a-aaa--bbb";
+	"ba--a-b-ab" -> "aba-b-a-ba";
+	"a-a-baab-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-a-baab-b" -> "b--baa-abb";
+	"a-a-baab-b" -> "bba--a-bba";
+	"a-a-baab-b" -> "bbaa-a-bb-";
+	"a-a-baab-b" -> "bb--aaabb-";
+	"a-a-baab-b" -> "b-aba--abb";
+	"a-a-baab-b" -> "ba-baa--bb";
+	"a-a-baab-b" -> "bba-a-abb-";
+	"a-a-baab-b" -> "baaba---bb";
+	"a-a-baab-b" -> "b-ab-aa-bb";
+	"b--a--b--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b--a--b--a" -> "aaba----b-";
+	"b--a--b--a" -> "aaba---b--";
+	"b--a--b--a" -> "aabab-----";
+	"b--a--b--a" -> "aa--bb-a--";
+	"bababa---b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"bababa---b" -> "aab-ba-ab-";
+	"bababa---b" -> "aabbba-a--";
+	"bababa---b" -> "aa-bbaba--";
+	"bababa---b" -> "aa--babab-";
+	"bababa---b" -> "aa-bba-a-b";
+	"bababa---b" -> "aa-b-a-abb";
+	"bababa---b" -> "aabb-a-ab-";
+	"bababa---b" -> "aa-b-abab-";
+	"aabbb--aa-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aabbb--aa-" -> "bb--baa-ba";
+	"aabbb--aa-" -> "bb-ab-a-ba";
+	"aabbb--aa-" -> "bb-ab--aba";
+	"aabbb--aa-" -> "bb-ab-aab-";
+	"aabbb--aa-" -> "bb--baaab-";
+	"aabbb--aa-" -> "bb--ba-aba";
+	"aabbb--aa-" -> "bba-b--aba";
+	"aabbb--aa-" -> "bba-b-a-ba";
+	"aabbb--aa-" -> "bba-b-aab-";
+	"baba-b-a-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"baba-b-a-b" -> "aa-a-b-bba";
+	"baba-b-a-b" -> "aa-abbb--a";
+	"baba-b-a-b" -> "aabab--b-a";
+	"baba-b-a-b" -> "aaba-bb--a";
+	"baba-b-a-b" -> "aa-a-bbb-a";
+	"baba-b-a-b" -> "aa-ab-bb-a";
+	"baba-b-a-b" -> "aaba--bb-a";
+	"baba-b-a-b" -> "aa-a-bb-ba";
+	"b---a-a-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b---a-a-b-" -> "a-a---b-ab";
+	"b---a-a-b-" -> "a-a-b---ab";
+	"b---a-a-b-" -> "a-a-b-b-a-";
+	"b---a-a-b-" -> "a-a-bb--a-";
+	"b-baaa--bb" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-baaa--bb" -> "abba-ab-a-";
+	"b-baaa--bb" -> "a--baa-bba";
+	"b-baaa--bb" -> "aabb-ab-a-";
+	"b-baaa--bb" -> "aa--bab-ab";
+	"b-baaa--bb" -> "aa--babba-";
+	"b-baaa--bb" -> "ab-baa--ba";
+	"b-baaa--bb" -> "aa-b-abba-";
+	"b-baaa--bb" -> "a-babab-a-";
+	"b-baaa--bb" -> "aa-b-ab-ab";
+	"b-b--aab-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-b--aab-a" -> "aaa--abb-b";
+	"b-b--aab-a" -> "ab--babaa-";
+	"b-b--aab-a" -> "ab---abaab";
+	"b-b--aab-a" -> "a-b-baab-a";
+	"a-ba-ab-ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-ba-ab-ab" -> "babbb-a--a";
+	"a-ba-ab-ab" -> "babbba---a";
+	"a-ba-ab-ab" -> "bb--baaab-";
+	"a-ba-ab-ab" -> "bb--ba-aba";
+	"a-ba-ab-ab" -> "b-bbbaaa--";
+	"a-ba-ab-ab" -> "b-bbbaa--a";
+	"a-ba-ab-ab" -> "bba-b--aba";
+	"a-ba-ab-ab" -> "bba-b-aab-";
+	"a-ba-ab-ab" -> "b-bbbaa-a-";
+	"ba-b-bb-aa" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ba-b-bb-aa" -> "ab-a-baa-b";
+	"ba-b-bb-aa" -> "ab-abbaa--";
+	"ba-b-bb-aa" -> "abbab-aa--";
+	"ba-b-bb-aa" -> "a-babbaa--";
+	"ba-b-bb-aa" -> "ab-a-baab-";
+	"ba-b-bb-aa" -> "a-ba-baab-";
+	"ba-b-bb-aa" -> "a-ba-baa-b";
+	"ba-b-bb-aa" -> "abba--aa-b";
+	"ba-b-bb-aa" -> "abba--aab-";
+	"aabb-----a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aabb-----a" -> "babb-a---a";
+	"aabb-----a" -> "bb-ab--a-a";
+	"aabb-----a" -> "babba----a";
+	"aabb-----a" -> "ba-ba-b--a";
+	"aabb-----a" -> "bbbaa--a--";
+	"bba--a-b-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bba--a-b-a" -> "ab-baa--ba";
+	"bba--a-b-a" -> "ab-baab--a";
+	"bba--a-b-a" -> "aa-b-ab-ab";
+	"bba--a-b-a" -> "aa-b-a-bab";
+	"aba---a--b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aba---a--b" -> "b-aba--b-a";
+	"aba---a--b" -> "bba--aa--b";
+	"aba---a--b" -> "baaba--b--";
+	"aba---a--b" -> "b-aba--ba-";
+	"aba-----ba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aba-----ba" -> "b-aaa-bb--";
+	"aba-----ba" -> "ba-aa-bb--";
+	"aba-----ba" -> "bb-aa-b--a";
+	"aba-----ba" -> "bab--a--ab";
+	"aba-----ba" -> "bba-a-b--a";
+	"abbaa-a-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"abbaa-a-b-" -> "b-b-aa-abb";
+	"abbaa-a-b-" -> "ba-ab-bba-";
+	"abbaa-a-b-" -> "b-a-babba-";
+	"abbaa-a-b-" -> "baaab-bb--";
+	"abbaa-a-b-" -> "bab---abba";
+	"abbaa-a-b-" -> "bab-a-a-bb";
+	"abbaa-a-b-" -> "b-b-aa-bba";
+	"abbaa-a-b-" -> "bbbaa--ab-";
+	"abbaa-a-b-" -> "b-a-b-bbaa";
+	"a-abab-ab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-abab-ab-" -> "bb--abbaa-";
+	"a-abab-ab-" -> "bb-aabb--a";
+	"a-abab-ab-" -> "bba-abb--a";
+	"a-abab-ab-" -> "bb--abba-a";
+	"a-abab-ab-" -> "bb-aabb-a-";
+	"a-abab-ab-" -> "bba-abb-a-";
+	"a-abab-ab-" -> "bb-a-bb-aa";
+	"a-abab-ab-" -> "bb---bbaaa";
+	"a-abab-ab-" -> "bba--bb-aa";
+	"baababb---" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"baababb---" -> "aaa-abb-b-";
+	"baababb---" -> "aaaba--bb-";
+	"baababb---" -> "aaa-ab-b-b";
+	"baababb---" -> "aaabab-b--";
+	"baababb---" -> "aaa-ab--bb";
+	"baababb---" -> "aaaba-b-b-";
+	"baababb---" -> "aaaba-b--b";
+	"baababb---" -> "aaa-abbb--";
+	"bb-ab-a-ba" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"abaa-b-b-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"abaa-b-b-a" -> "ba-a-b-bab";
+	"abaa-b-b-a" -> "bba--b-baa";
+	"abaa-b-b-a" -> "bb---babaa";
+	"abaa-b-b-a" -> "bbabab-a--";
+	"abaa-b-b-a" -> "bb-bab-a-a";
+	"abaa-b-b-a" -> "bb-b-b-aaa";
+	"abaa-b-b-a" -> "bbabab---a";
+	"abaa-b-b-a" -> "bba--bab-a";
+	"abaa--bab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"abaa--bab-" -> "b-b-a-bbaa";
+	"abaa--bab-" -> "baba--bba-";
+	"abaa--bab-" -> "bb-a--baba";
+	"abaa--bab-" -> "bab-aabb--";
+	"abaa--bab-" -> "b-baba-a-b";
+	"abaa--bab-" -> "babaa-bb--";
+	"abaa--bab-" -> "bab--abba-";
+	"abaa--bab-" -> "bab---bbaa";
+	"bb-b-b-aaa" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aa-ab--bba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aa-ab--bba" -> "bbbaba---a";
+	"aa-ab--bba" -> "bbb-b--aaa";
+	"aa-ab--bba" -> "bbb-b-aa-a";
+	"aa-ab--bba" -> "bbbaba-a--";
+	"aa-ab--bba" -> "bbbab-aa--";
+	"bab-a-ba--" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ab-ba-ab-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ab-ba-ab-a" -> "bbab-a-a-b";
+	"ab-ba-ab-a" -> "bbab--aa-b";
+	"ab-ba-ab-a" -> "bbaba---ab";
+	"ab-ba-ab-a" -> "bb-ba--aab";
+	"ab-ba-ab-a" -> "bb-b--aaab";
+	"ab-ba-ab-a" -> "bba-a--bab";
+	"ab-ba-ab-a" -> "bb-baaa--b";
+	"ab-ba-ab-a" -> "bb-baa-a-b";
+	"aabb--aa-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aabb--aa-b" -> "baab---abb";
+	"aabb--aa-b" -> "babb-a-a-b";
+	"aabb--aa-b" -> "bba-a--bba";
+	"aabb--aa-b" -> "bb--aa-bba";
+	"aabb--aa-b" -> "bb-aaa-bb-";
+	"aabb--aa-b" -> "bbaaa--bb-";
+	"aabb--aa-b" -> "b-aa--bbab";
+	"aabb--aa-b" -> "b-bba-aa-b";
+	"aabb--aa-b" -> "babba--a-b";
+	"ba-bab--a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ba-bab--a-" -> "aabbab--a-";
+	"ba-bab--a-" -> "a-abab-a-b";
+	"ba-bab--a-" -> "a-aaab--bb";
+	"ba-bab--a-" -> "abaaab---b";
+	"a-baab--ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-baab--ab" -> "bb--abb-aa";
+	"a-baab--ab" -> "bb-aabb--a";
+	"a-baab--ab" -> "ba-bbba--a";
+	"a-baab--ab" -> "bb--abbaa-";
+	"a-baab--ab" -> "bbaaabb---";
+	"a-baab--ab" -> "bba-abb-a-";
+	"a-baab--ab" -> "bbaa-bb-a-";
+	"a-baab--ab" -> "bb-a-bb-aa";
+	"a-baab--ab" -> "b-baab-a-b";
+	"b----a-ab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b----a-ab-" -> "a----abb-a";
+	"b----a-ab-" -> "a--b-ab--a";
+	"b----a-ab-" -> "a----ab-ba";
+	"b----a-ab-" -> "a---baba--";
+	"b----a-ab-" -> "ab---ab--a";
+	"b----a-ab-" -> "a----abab-";
+	"a-aab-bab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-aab-bab-" -> "bab-a-bab-";
+	"a-aab-bab-" -> "b-ba--baba";
+	"a-aab-bab-" -> "bab--ab-ba";
+	"a-aab-bab-" -> "b-b-aab-ba";
+	"a-aab-bab-" -> "b-baa-b-ba";
+	"a-aab-bab-" -> "b-b-aabab-";
+	"a-aab-bab-" -> "bab---baba";
+	"a-aab-bab-" -> "b-b-a-baba";
+	"abba--aa-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"abba--aa-b" -> "b-abb--baa";
+	"abba--aa-b" -> "b-abba-b-a";
+	"abba--aa-b" -> "bbba-a-a-b";
+	"abba--aa-b" -> "baabb--ba-";
+	"abba--aa-b" -> "b-abb-ab-a";
+	"abba--aa-b" -> "bbba--a-ab";
+	"abba--aa-b" -> "bbba---aab";
+	"abba--aa-b" -> "bbba-aa--b";
+	"abba--aa-b" -> "ba-bb--baa";
+	"b-ab-aa-bb" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-ab-aa-bb" -> "aba-baab--";
+	"b-ab-aa-bb" -> "ababaa-b--";
+	"b-ab-aa-bb" -> "a-ab-aabb-";
+	"b-ab-aa-bb" -> "aba-baa--b";
+	"b-ab-aa-bb" -> "aba-baa-b-";
+	"b-ab-aa-bb" -> "abab-aab--";
+	"b-ab-aa-bb" -> "a-abbaa--b";
+	"b-ab-aa-bb" -> "a-abbaa-b-";
+	"a-aa-bb---" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-aa-bb---" -> "bab-ab-a--";
+	"a-aa-bb---" -> "babaab----";
+	"a-aa-bb---" -> "bab-ab---a";
+	"a-aa-bb---" -> "bab-aba---";
+	"a-aa-bb---" -> "b-aaabb---";
+	"aa-bba-a-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aa-bba-a-b" -> "b--bba-aab";
+	"aa-bba-a-b" -> "bb-b--aaba";
+	"aa-bba-a-b" -> "ba-bb-aa-b";
+	"aa-bba-a-b" -> "bb-b-aaab-";
+	"aa-bba-a-b" -> "bbab-a--ba";
+	"aaba----b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aaba----b-" -> "ba--b-ba-a";
+	"aaba----b-" -> "b-b-a--aba";
+	"aaba----b-" -> "b-b--a-aba";
+	"ba--b-ba-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ba--b-ba-a" -> "aa-ab-b-ba";
+	"ba--b-ba-a" -> "aa-abbb--a";
+	"ba--b-ba-a" -> "aaba--b-ba";
+	"ba--b-ba-a" -> "aa-ab-bb-a";
+	"a-a---a-bb" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-a---a-bb" -> "ba--a-b-ab";
+	"a-a---a-bb" -> "b-bb-aa-a-";
+	"a-a---a-bb" -> "b-aba-b--a";
+	"a-a---a-bb" -> "b-aba-b-a-";
+	"a-a---a-bb" -> "baaba-b---";
+	"b-bba-a--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-bba-a--a" -> "ab-aa-a-bb";
+	"b-bba-a--a" -> "a-bba-a-ba";
+	"b-bba-a--a" -> "abbba-a--a";
+	"b-bba-a--a" -> "a--aaba-bb";
+	"aaa-abb-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aaa-abb-b-" -> "b-baabb-a-";
+	"aaa-abb-b-" -> "ba--abb-ba";
+	"aaa-abb-b-" -> "b-aaabb-b-";
+	"aaa-abb-b-" -> "bab-abba--";
+	"aaa-abb-b-" -> "b-b-abba-a";
+	"b-abb-a-ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-abb-a-ab" -> "a-bba-aba-";
+	"b-abb-a-ab" -> "a-bba-a-ab";
+	"b-abb-a-ab" -> "a-ababa-b-";
+	"b-abb-a-ab" -> "a---ababab";
+	"b-abb-a-ab" -> "ab--a-abab";
+	"a-b-a-abab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-b-a-abab" -> "b-abb-aa-b";
+	"a-b-a-abab" -> "b--bb-aaab";
+	"a-b-a-abab" -> "b-abbaa--b";
+	"a-b-a-abab" -> "b-abb--aab";
+	"a-b-a-abab" -> "b-abba--ab";
+	"b-b-aabba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-b-aabba-" -> "ababbaa---";
+	"b-b-aabba-" -> "a-ab-aabb-";
+	"b-b-aabba-" -> "a-abbaa--b";
+	"b-b-aabba-" -> "a-a-baabb-";
+	"b-b-aabba-" -> "aba-baa-b-";
+	"a-aa-b--b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-aa-b--b-" -> "ba-aabb---";
+	"a-aa-b--b-" -> "ba--abb--a";
+	"a-aa-b--b-" -> "ba--abb-a-";
+	"a-aa-b--b-" -> "baa-abb---";
+	"a-aa-b--b-" -> "ba--abba--";
+	"babaa--b--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"babaa--b--" -> "aa--bb-aab";
+	"babaa--b--" -> "aa--b-baab";
+	"babaa--b--" -> "aa-bb--aab";
+	"babaa--b--" -> "aaabb--ab-";
+	"abbab---aa" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"abbab---aa" -> "bbbab-aa--";
+	"abbab---aa" -> "bbb-baaa--";
+	"abbab---aa" -> "bbbab--a-a";
+	"abbab---aa" -> "bbb-ba--aa";
+	"abbab---aa" -> "bbb-b-a-aa";
+	"abbab---aa" -> "bbbaba---a";
+	"abbab---aa" -> "bbb-b--aaa";
+	"abbab---aa" -> "bbb-b-aaa-";
+	"bab-ab-a--" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-bbaa--a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-bbaa--a-" -> "a-ab-aabb-";
+	"b-bbaa--a-" -> "a-a-baabb-";
+	"b-bbaa--a-" -> "aba-baab--";
+	"b-bbaa--a-" -> "a-a-baab-b";
+	"b-----aab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-----aab-" -> "a-a---b-ba";
+	"b-----aab-" -> "a-a--bb--a";
+	"b-----aab-" -> "a-a-b-ba--";
+	"b-----aab-" -> "a-a-b--a-b";
+	"b-----aab-" -> "aba---b--a";
+	"b-----aab-" -> "a-ab--b--a";
+	"bb-baa--ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"bb-baa--ab" -> "ababaa-b--";
+	"bb-baa--ab" -> "a-a-baab-b";
+	"bb-baa--ab" -> "abab-aab--";
+	"bb-baa--ab" -> "aba-baa--b";
+	"bb-baa--ab" -> "aba-baab--";
+	"b-baab-a-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-baab-a-b" -> "abaab--a-b";
+	"b-baab-a-b" -> "abaabb-a--";
+	"b-baab-a-b" -> "aab-b-ab-a";
+	"b-baab-a-b" -> "aa---babba";
+	"b-baab-a-b" -> "ab-a-baa-b";
+	"b-baab-a-b" -> "ab-abbaa--";
+	"b-baab-a-b" -> "aab-bba--a";
+	"b-baab-a-b" -> "a-ba-baab-";
+	"b-baab-a-b" -> "abba--aab-";
+	"abaab--b-a" [label=<<TABLE BORDER="1" BGCOLOR="blue">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ba-a-bb-ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"ba-a-bb-ab" -> "aa-b-baab-";
+	"ba-a-bb-ab" -> "aabbb-aa--";
+	"ba-a-bb-ab" -> "aabb--aab-";
+	"ba-a-bb-ab" -> "aabb--aa-b";
+	"ba-a-bb-ab" -> "aab-bbaa--";
+	"ba-a-bb-ab" -> "aab--baab-";
+	"ba-a-bb-ab" -> "aa-bbbaa--";
+	"ba-a-bb-ab" -> "aa-b-baa-b";
+	"abaab--a-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"abaab--a-b" -> "bbba-a-a-b";
+	"abaab--a-b" -> "bbbaaa---b";
+	"abaab--a-b" -> "baabb--ba-";
+	"abaab--a-b" -> "bbaa--a-bb";
+	"abaab--a-b" -> "bb-a-aa-bb";
+	"abaab--a-b" -> "b-abb--baa";
+	"abaab--a-b" -> "bb-aa--abb";
+	"abaab--a-b" -> "bbbaa---ab";
+	"abaab--a-b" -> "bbba---aab";
+	"bbb-ba-aa-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bbb-ba-aa-" -> "a-b-babaa-";
+	"bbb-ba-aa-" -> "ab--babaa-";
+	"bbb-ba-aa-" -> "a-b-ba-aab";
+	"bbb-ba-aa-" -> "ab--baab-a";
+	"bbb-ba-aa-" -> "a-b-baab-a";
+	"bbb-ba-aa-" -> "a--bbaab-a";
+	"bbb-ba-aa-" -> "ab---aabba";
+	"bbb-ba-aa-" -> "ab--ba-aab";
+	"bbb-ba-aa-" -> "ab--baa-ba";
+	"aab--baab-" [label=<<TABLE BORDER="1" BGCOLOR="blue">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bba-abb-a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bba-abb-a-" -> "a-ababa-b-";
+	"bba-abb-a-" -> "a-bba-a-ab";
+	"bba-abb-a-" -> "a-bba-aba-";
+	"bba-abb-a-" -> "a--baba-ab";
+	"bba-abb-a-" -> "a-b-a-abab";
+	"bba-abb-a-" -> "a-a-ababb-";
+	"bba-abb-a-" -> "a---ababab";
+	"bba-abb-a-" -> "a--bababa-";
+	"ab-baab--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ab-baab--a" -> "baab---abb";
+	"ab-baab--a" -> "b--baa-abb";
+	"ab-baab--a" -> "babb-a-a-b";
+	"ab-baab--a" -> "bbaa-a-bb-";
+	"ab-baab--a" -> "bba--aabb-";
+	"ab-baab--a" -> "bb--aa-bba";
+	"ab-baab--a" -> "b-ab-aa-bb";
+	"ab-baab--a" -> "b-aba--abb";
+	"ab-baab--a" -> "bba-a--bba";
+	"a----a-b--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a----a-b--" -> "ba---a---b";
+	"a----a-b--" -> "b----a--ab";
+	"a----a-b--" -> "b---aa---b";
+	"a----a-b--" -> "b----a-a-b";
+	"bb-ab-aab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bb-ab-aab-" -> "abaab--a-b";
+	"bb-ab-aab-" -> "aab-b--baa";
+	"bb-ab-aab-" -> "a-aab-bab-";
+	"bb-ab-aab-" -> "ab-abbaa--";
+	"bb-ab-aab-" -> "aab-bba--a";
+	"bb-ab-aab-" -> "aa-bb-ab-a";
+	"bb-ab-aab-" -> "ab-a-baab-";
+	"bb-ab-aab-" -> "abbab-aa--";
+	"bb-ab-aab-" -> "abba--aab-";
+	"b-ba-aa--b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-ba-aa--b" -> "a--bba-aab";
+	"b-ba-aa--b" -> "aaabbab---";
+	"b-ba-aa--b" -> "ab--ba-aab";
+	"b-ba-aa--b" -> "a-b-ba-aab";
+	"bb--abb-aa" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb--abb-aa" -> "aabbab--a-";
+	"bb--abb-aa" -> "aba-ab-ab-";
+	"bb--abb-aa" -> "aa--ab-bab";
+	"bb--abb-aa" -> "aa--abb-ab";
+	"bb--abb-aa" -> "aab-a--bab";
+	"bb--abb-aa" -> "a-abab-a-b";
+	"bb--abb-aa" -> "a-a-abbab-";
+	"bb--abb-aa" -> "a-aba--abb";
+	"bb--abb-aa" -> "aba-b-a-ba";
+	"aa--bb-aab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aa--bb-aab" -> "ba---bbbaa";
+	"aa--bb-aab" -> "bb-a-bb-aa";
+	"aa--bb-aab" -> "bb-aabb--a";
+	"aa--bb-aab" -> "bba-abb--a";
+	"aa--bb-aab" -> "baba-b-a-b";
+	"aa--bb-aab" -> "bbaa-bb-a-";
+	"aa--bb-aab" -> "b-abbb-a-a";
+	"aa--bb-aab" -> "bbaaabb---";
+	"aa--bb-aab" -> "bba--bb-aa";
+	"b---aa--b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b---aa--b-" -> "a----abba-";
+	"b---aa--b-" -> "a---aab-b-";
+	"b---aa--b-" -> "a--b-ab-a-";
+	"b---aa--b-" -> "a----ab-ab";
+	"b---aa--b-" -> "a---bab-a-";
+	"b---aa--b-" -> "ab---ab-a-";
+	"a---ba----" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a---ba----" -> "b----a-ab-";
+	"a---ba----" -> "b---aa--b-";
+	"a---ba----" -> "ba---a--b-";
+	"a---ba----" -> "b-a--a--b-";
+	"a---aab-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a---aab-b-" -> "b-b--ab-aa";
+	"a---aab-b-" -> "b-ba-ab-a-";
+	"a---aab-b-" -> "b-b--abaa-";
+	"a---aab-b-" -> "bab--ab-a-";
+	"a---aab-b-" -> "b-b-aab-a-";
+	"a-a---abb-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-a---abb-" -> "b-aaa-b--b";
+	"a-a---abb-" -> "baa-a-b--b";
+	"a-a---abb-" -> "b-bbaa--a-";
+	"a-a---abb-" -> "b-aba-b-a-";
+	"a-a---abb-" -> "ba-ba-b-a-";
+	"ba-ba---ba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ba-ba---ba" -> "ab-a-baab-";
+	"ba-ba---ba" -> "aab-b-ab-a";
+	"ba-ba---ba" -> "abaab--a-b";
+	"ba-ba---ba" -> "abba--aab-";
+	"b-aba--abb" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"b-aba--abb" -> "aabbab--a-";
+	"b-aba--abb" -> "abaaa--b-b";
+	"b-aba--abb" -> "a-abab-ab-";
+	"b-aba--abb" -> "abaaa-b--b";
+	"b-aba--abb" -> "aab-a--bab";
+	"b-aba--abb" -> "a-abab-a-b";
+	"b-aba--abb" -> "aba-b-a-ba";
+	"b-aba--abb" -> "a-aaa--bbb";
+	"b-aba--abb" -> "a-aaa-b-bb";
+	"a-a-baabb-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a-a-baabb-" -> "bbb-b-a-aa";
+	"a-a-baabb-" -> "bbb-ba--aa";
+	"a-a-baabb-" -> "bbb-baaa--";
+	"a-a-baabb-" -> "bbb-b-aaa-";
+	"a-a-baabb-" -> "bbb-ba-aa-";
+	"a-ab----ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-ab----ab" -> "bbaba-a---";
+	"a-ab----ab" -> "bba--a-ba-";
+	"a-ab----ab" -> "bb-ba-aa--";
+	"a-ab----ab" -> "b-aba---ab";
+	"ba----a--b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"ba----a--b" -> "aba-----ba";
+	"ba----a--b" -> "a-ab--ba--";
+	"ba----a--b" -> "a-ab---a-b";
+	"ba----a--b" -> "abab---a--";
+	"ba----a--b" -> "aba---b--a";
+	"ba----a--b" -> "aba--b---a";
+	"aa--bab-ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aa--bab-ab" -> "bbba-a--ba";
+	"aa--bab-ab" -> "ba-ab-bba-";
+	"aa--bab-ab" -> "b-a-babba-";
+	"aa--bab-ab" -> "bab-a-a-bb";
+	"aa--bab-ab" -> "b-aababb--";
+	"aa--bab-ab" -> "b-b-aa-bba";
+	"aa--bab-ab" -> "b--ab-bbaa";
+	"aa--bab-ab" -> "baba-a--bb";
+	"aa--bab-ab" -> "bab-aa-bb-";
+	"abaaa--bb-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"abaaa--bb-" -> "baab---abb";
+	"abaaa--bb-" -> "bba-a-abb-";
+	"abaaa--bb-" -> "bbaa-a-bb-";
+	"abaaa--bb-" -> "b-ab-aa-bb";
+	"abaaa--bb-" -> "b-bba-aa-b";
+	"abaaa--bb-" -> "bba-a--bba";
+	"abaaa--bb-" -> "baaba---bb";
+	"abaaa--bb-" -> "bb-aaa-bb-";
+	"abaaa--bb-" -> "ba-ab--bab";
+	"ba-ba-a-b-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ba-ba-a-b-" -> "ab-aaba-b-";
+	"ba-ba-a-b-" -> "ab-aa-a-bb";
+	"ba-ba-a-b-" -> "ab-aa-abb-";
+	"ba-ba-a-b-" -> "abbaa-a-b-";
+	"bb-aabb-a-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bb-aabb-a-" -> "aab--ba-ab";
+	"bb-aabb-a-" -> "aab-bba-a-";
+	"bb-aabb-a-" -> "aa--bbaba-";
+	"bb-aabb-a-" -> "aabb--aba-";
+	"bb-aabb-a-" -> "aa---babab";
+	"bb-aabb-a-" -> "aab---abab";
+	"bb-aabb-a-" -> "aa-b-baba-";
+	"bb-aabb-a-" -> "aab-b-aba-";
+	"aa-b-ab-ab" [label=<<TABLE BORDER="1" BGCOLOR="blue">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aab-b----a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aab-b----a" -> "ba--a-b-ba";
+	"aab-b----a" -> "ba-ab--ab-";
+	"aab-b----a" -> "bab-ba---a";
+	"aba--b---a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aba--b---a" -> "ba--aba--b";
+	"aba--b---a" -> "bb-aab---a";
+	"aba--b---a" -> "ba--ab--ab";
+	"aba--b---a" -> "ba-aab-b--";
+	"aba--b---a" -> "bba-ab---a";
+	"bab-aabb--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bab-aabb--" -> "ab--baa-ba";
+	"bab-aabb--" -> "a-b-babaa-";
+	"bab-aabb--" -> "a--bba-aab";
+	"bab-aabb--" -> "a---aababb";
+	"bab-aabb--" -> "ab--ba-aab";
+	"bab-aabb--" -> "a--abaab-b";
+	"bab-aabb--" -> "a-b--abaab";
+	"bab-aabb--" -> "a--bbaab-a";
+	"bab-aabb--" -> "aaabbab---";
+	"abba-b--aa" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"abba-b--aa" -> "bbb-ab--aa";
+	"abba-b--aa" -> "ba-a-bb-ab";
+	"abba-b--aa" -> "b-aa-babb-";
+	"abba-b--aa" -> "b--a-babba";
+	"abba-b--aa" -> "bbbaab--a-";
+	"abba-b--aa" -> "ba-a-b-bba";
+	"abba-b--aa" -> "baa-bbab--";
+	"abba-b--aa" -> "bbba-b-aa-";
+	"abba-b--aa" -> "baaa-b-bb-";
+	"b-baa-b-ba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-baa-b-ba" -> "aab-bbaa--";
+	"b-baa-b-ba" -> "aabbb-aa--";
+	"b-baa-b-ba" -> "aabb--aab-";
+	"b-baa-b-ba" -> "aab--baab-";
+	"b-baa-b-ba" -> "aaba--bba-";
+	"b-b-abba-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-b-abba-a" -> "a--abbb-aa";
+	"b-b-abba-a" -> "ab-abb--aa";
+	"b-b-abba-a" -> "aab-bb-aa-";
+	"b-b-abba-a" -> "abbab---aa";
+	"b-b-abba-a" -> "abba-b--aa";
+	"b-b-abba-a" -> "aab---baab";
+	"b-b-abba-a" -> "a--abb-baa";
+	"b-b-abba-a" -> "aab--b-aab";
+	"b-b-abba-a" -> "aab-b-baa-";
+	"bb-a--baba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb-a--baba" -> "aaba-bb--a";
+	"bb-a--baba" -> "aaba--b-ba";
+	"bb-a--baba" -> "aabab--b-a";
+	"bb-a--baba" -> "aa-a-bbb-a";
+	"bb-a--baba" -> "aa-ab-bb-a";
+	"aaab-a-b-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aaab-a-b-b" -> "bb-baa--ab";
+	"aaab-a-b-b" -> "bb-ba-aa-b";
+	"aaab-a-b-b" -> "bbab-a-a-b";
+	"aaab-a-b-b" -> "bb-ba--aab";
+	"aaab-a-b-b" -> "bb-baaa--b";
+	"aaab-a-b-b" -> "bb-baa-a-b";
+	"aaab-a-b-b" -> "bb-b-aa-ab";
+	"aaab-a-b-b" -> "bb-b--aaab";
+	"b-----a-ba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-----a-ba" -> "aaa-b-b---";
+	"b-----a-ba" -> "aaa-b----b";
+	"b-----a-ba" -> "abaa--b---";
+	"b-----a-ba" -> "a-aa--b--b";
+	"b-----a-ba" -> "a-aa--b-b-";
+	"b-----a-ba" -> "a-aa-bb---";
+	"bba--b-baa" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bba--b-baa" -> "ab-aaba--b";
+	"bba--b-baa" -> "ab--aba-ba";
+	"bba--b-baa" -> "a-baa-ab-b";
+	"bba--b-baa" -> "abbba-a--a";
+	"bba--b-baa" -> "a--baba-ba";
+	"bba--b-baa" -> "a--aababb-";
+	"bba--b-baa" -> "ab-ba-ab-a";
+	"bba--b-baa" -> "a--aaba-bb";
+	"bba--b-baa" -> "ab-aabab--";
+	"b-aaa-bb--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-aaa-bb--" -> "aab-a--bab";
+	"b-aaa-bb--" -> "aba-b-a-ba";
+	"b-aaa-bb--" -> "a-aba--abb";
+	"b-aaa-bb--" -> "a-abab-ab-";
+	"ab-b-a-a--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"ab-b-a-a--" -> "bb-a-a-b-a";
+	"ab-b-a-a--" -> "bba--a-b-a";
+	"ab-b-a-a--" -> "bb---aab-a";
+	"ab-b-a-a--" -> "bbab-a-a--";
+	"ab-b-a-a--" -> "bbaa-a-b--";
+	"aab-b-ab-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aab-b-ab-a" -> "bb-ab-a-ba";
+	"aab-b-ab-a" -> "baa-a-bbb-";
+	"aab-b-ab-a" -> "bb-ab--aba";
+	"aab-b-ab-a" -> "b-aa--bbba";
+	"aab-b-ab-a" -> "babbba---a";
+	"aab-b-ab-a" -> "babbb-a--a";
+	"aab-b-ab-a" -> "bb--baaab-";
+	"aab-b-ab-a" -> "bba-b-aab-";
+	"aab-b-ab-a" -> "baa--abbb-";
+	"bab-bb-aa-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bab-bb-aa-" -> "aa--bb-aab";
+	"bab-bb-aa-" -> "a--abbb-aa";
+	"bab-bb-aa-" -> "aabbb--aa-";
+	"bab-bb-aa-" -> "a-aa-bbb-a";
+	"bab-bb-aa-" -> "abba-b--aa";
+	"bab-bb-aa-" -> "a-aabb--ba";
+	"bab-bb-aa-" -> "aab--b-aab";
+	"bab-bb-aa-" -> "aab-b-baa-";
+	"bab-bb-aa-" -> "aaabb--ab-";
+	"aba-----ab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"aba-----ab" -> "bba--a--ab";
+	"aba-----ab" -> "ba-ba-ab--";
+	"aba-----ab" -> "b-aba--ba-";
+	"a-a-bb---a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a-a-bb---a" -> "ba--aba-b-";
+	"a-a-bb---a" -> "ba--abb-a-";
+	"a-a-bb---a" -> "bab-ab---a";
+	"a-a-bb---a" -> "b-baab---a";
+	"a-a-bb---a" -> "ba-aab--b-";
+	"aab-bba--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"aab-bba--a" -> "bababb--a-";
+	"aab-bba--a" -> "bab-bb-aa-";
+	"aab-bba--a" -> "baa-abb-b-";
+	"aab-bba--a" -> "b-baabb-a-";
+	"aab-bba--a" -> "b-b-abba-a";
+	"aab-bba--a" -> "bababb---a";
+	"aab-bba--a" -> "ba--abb-ba";
+	"aab-bba--a" -> "bab-abba--";
+	"bbaaa--bb-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"bbaaa--bb-" -> "a-aaa--bbb";
+	"bbaaa--bb-" -> "abaaab--b-";
+	"bbaaa--bb-" -> "abaaa--b-b";
+	"bbaaa--bb-" -> "abaaa-b-b-";
+	"bbaaa--bb-" -> "aab-a--bab";
+	"bbaaa--bb-" -> "a-abb-ab-a";
+	"bbaaa--bb-" -> "aa--ab-bab";
+	"bbaaa--bb-" -> "aa--abb-ab";
+	"bbaaa--bb-" -> "aba-b-a-ba";
+	"b-b--abaa-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-b--abaa-" -> "a-b-babaa-";
+	"b-b--abaa-" -> "a-b--abaab";
+	"b-b--abaa-" -> "a-bbaaba--";
+	"b-b--abaa-" -> "a-b-baab-a";
+	"bbb-b--aaa" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"b-bb-a-aa-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-bb-a-aa-" -> "a--abaab-b";
+	"b-bb-a-aa-" -> "a-bbaaba--";
+	"b-bb-a-aa-" -> "ab--baab-a";
+	"b-bb-a-aa-" -> "ab--baa-ba";
+	"abab-aab--" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"abab-aab--" -> "bba-a--bab";
+	"abab-aab--" -> "bbaba---ab";
+	"abab-aab--" -> "bb-baa-a-b";
+	"abab-aab--" -> "bb-baaa--b";
+	"abab-aab--" -> "bbab-a-a-b";
+	"abab-aab--" -> "bbab-aa--b";
+	"abab-aab--" -> "bb-baa--ab";
+	"abab-aab--" -> "bb-b--aaab";
+	"aa-b-baab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aa-b-baab-" -> "ba---bbbaa";
+	"aa-b-baab-" -> "baba-ba--b";
+	"aa-b-baab-" -> "bba-abba--";
+	"aa-b-baab-" -> "bba--bbaa-";
+	"aa-b-baab-" -> "bb--abba-a";
+	"aa-b-baab-" -> "bba-abb--a";
+	"aa-b-baab-" -> "bba--bb-aa";
+	"aa-b-baab-" -> "bb---bbaaa";
+	"aa-b-baab-" -> "baba-b-a-b";
+	"a-a--bb--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"a-a--bb--a" -> "bab-aba---";
+	"a-a--bb--a" -> "babaab----";
+	"a-a--bb--a" -> "b-a-abb--a";
+	"a-a--bb--a" -> "b-baab---a";
+	"a-a--bb--a" -> "ba--ab--ba";
+	"bbb-aaa---" [label=<<TABLE BORDER="1" BGCOLOR="red">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a----abba-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a----abba-" -> "bab--aa--b";
+	"a----abba-" -> "b-b-aa-b-a";
+	"a----abba-" -> "b-b-aaab--";
+	"a----abba-" -> "b-ba-aa--b";
+	"a----abba-" -> "b-b--aa-ab";
+	"a-ab---a-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"a-ab---a-b" -> "bb-ba-aa--";
+	"a-ab---a-b" -> "bba--a-b-a";
+	"a-ab---a-b" -> "bbaba----a";
+	"a-ab---a-b" -> "bb-ba--a-a";
+	"a-ab---a-b" -> "b-aba--a-b";
+	"baa-ab---b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"baa-ab---b" -> "aaa-ab--bb";
+	"baa-ab---b" -> "aaa-ab-b-b";
+	"bb-ab--a-a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"bb-ab--a-a" -> "aa-a-b-bba";
+	"bb-ab--a-a" -> "aa-ab--bba";
+	"bb-ab--a-a" -> "aabab--b-a";
+	"bb-ab--a-a" -> "aa-ab-bb-a";
+	"ab--a-abba" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"ab--a-abba" -> "b--baa-abb";
+	"ab--a-abba" -> "bb--aaabb-";
+	"ab--a-abba" -> "ba-ab--bab";
+	"ab--a-abba" -> "bb--aa-bba";
+	"ab--a-abba" -> "b-aba--abb";
+	"ab--a-abba" -> "bba-a-abb-";
+	"ab--a-abba" -> "bba-a--bba";
+	"ab--a-abba" -> "b-bba-aa-b";
+	"ab--a-abba" -> "babba--a-b";
+	"b-b-aabab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"b-b-aabab-" -> "a-bbaaba--";
+	"b-b-aabab-" -> "a-b-ba-aab";
+	"b-b-aabab-" -> "aaabbab---";
+	"b-b-aabab-" -> "a-b-baab-a";
+	"b-b-aabab-" -> "a---aababb";
+	"b-b-aabab-" -> "ab--babaa-";
+	"b-b-aabab-" -> "a--bbabaa-";
+	"b-b-aabab-" -> "a-b--abaab";
+	"b-b-aabab-" -> "ab--baa-ba";
+	"ab---abaab" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"ab---abaab" -> "b-abb--baa";
+	"ab---abaab" -> "b-abba-b-a";
+	"ab---abaab" -> "bbba-a-a-b";
+	"ab---abaab" -> "bbaa--a-bb";
+	"ab---abaab" -> "bbbaaa---b";
+	"ab---abaab" -> "bbb-aa--ab";
+	"ab---abaab" -> "bbb--a-aab";
+	"ab---abaab" -> "ba-bb--baa";
+	"ab---abaab" -> "b--baaabb-";
+	"aabb-a-ab-" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"aabb-a-ab-" -> "baaab-bb--";
+	"aabb-a-ab-" -> "b-b-aa-abb";
+	"aabb-a-ab-" -> "ba-ab-bba-";
+	"aabb-a-ab-" -> "bab--a-bba";
+	"aabb-a-ab-" -> "b--ababba-";
+	"aabb-a-ab-" -> "b-aababb--";
+	"aabb-a-ab-" -> "b-b-aa-bba";
+	"aabb-a-ab-" -> "baba-a--bb";
+	"aabb-a-ab-" -> "baba---bba";
+	"a---------" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD></TR>
+	</TABLE>>];
+	"a---------" -> "b----a----";
+	"a---------" -> "b------a--";
+	"a---------" -> "b---a-----";
+	"bb-baa-a-b" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="blue"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD></TR>
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD></TR>
+	</TABLE>>];
+	"bb-baa-a-b" -> "aaa--abb-b";
+	"bb-baa-a-b" -> "a--b-abaab";
+	"bb-baa-a-b" -> "ab--baab-a";
+	"bb-baa-a-b" -> "ab--ba-aab";
+	"bb-baa-a-b" -> "ab---abaab";
+	"bb-baa-a-b" -> "ab---aabba";
+	"bb-baa-a-b" -> "a--bba-aab";
+	"bb-baa-a-b" -> "a--abaab-b";
+	"bb-baa-a-b" -> "a--bbaab-a";
+	"baba-bb--a" [label=<<TABLE BORDER="1" BGCOLOR="white">
+		<TR><TD BGCOLOR="red"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="red"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="blue"></TD><TD BGCOLOR="blue"></TD></TR>
+		<TR><TD BGCOLOR="white"></TD><TD BGCOLOR="white"></TD><TD BGCOLOR="red"></TD></TR>
+	</TABLE>>];
+	"baba-bb--a" -> "aaba--b-ba";
+	"baba-bb--a" -> "aa-abbb--a";
+	"baba-bb--a" -> "aaba--bb-a";
+	"baba-bb--a" -> "aa-a-bbb-a";
+	"baba-bb--a" -> "aa-a-bb-ba";
+}
