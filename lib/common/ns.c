@@ -957,8 +957,8 @@ void get_rank2_edges(Array *workload) {
 
 static void rank2_work(edge_t* e, int iter, int maxiter) {
     edge_t* f = NULL;
-    f = enter_edge(e);
-    update(e, f);
+    f = enter_edge(&e);
+    update(&e, f);
 }
 
 static void rank2_work_2(edge_t* e, int iter, int maxiter, Array* newEdge) {
@@ -974,7 +974,7 @@ void rank2_load_balancer(Array* workload, int tasker, int size) {
     if (end > workload->used)
         end = workload->used;
     for (start; start < end; start++) {
-        rank2_work(workload->array[start], start, MaxIter);
+        rank2_work(&workload->array[start], start, MaxIter);
     }
 }
 
@@ -1126,16 +1126,16 @@ void parallel_processing_2(int maxiter) {
         printf("found some :: %d\n",edges.used);
     int size = 50;
     // set thread and run in parallel
-    omp_set_num_threads(1);
-    //#pragma omp parallel for default(none) private(edges,i,size)
+    omp_set_num_threads(2);
     ANNOTATE_SITE_BEGIN(parallel_processing_2);
+#pragma omp parallel for default(none) private(edges,i,size)
     for (i = 0; i < edges.used; i++) {
         if (printed == 0 && omp_get_thread_num() == 0) {
             printf("running %d threads\n", omp_get_num_threads());
             printed = 1;
         }
         ANNOTATE_ITERATION_TASK(rank2_load_balancer)
-        rank2_load_balancer(&edges.array, i, size);
+        rank2_load_balancer(edges.array, i, size);
     }
     ANNOTATE_SITE_END();
     if (edges.used > 0) {
@@ -1214,14 +1214,14 @@ int rank2(graph_t * g, int balance, int maxiter, int search_size)
     ///*
     // collect negative edges
     //parallel_processing_1(maxiter);
-    parallel_processing_2(maxiter);
+    //parallel_processing_2(maxiter);
     //parallel_processing_3(maxiter);
-    clock_t difference = clock() - before;
+    //clock_t difference = clock() - before;
     //*/
 
 
     // target loop
-   /*
+   
     while ((e = leave_edge())) {
 	    f = enter_edge(e);
 	    update(e, f);
@@ -1239,7 +1239,7 @@ int rank2(graph_t * g, int balance, int maxiter, int search_size)
     if (iter > 0)
      printf("completed %d iters\n", iter);
     clock_t difference = clock() - before;
-    */
+    
     /*
     printf("Time taken to complete processing was %d.%d secs\n",
         difference / 1000, difference % 1000);
