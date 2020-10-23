@@ -389,6 +389,7 @@ static void _dot_splines(graph_t * g, int normalize)
 	    MAKEFWDEDGE(&fwdedgea.out, ea);
 	    ea = &fwdedgea.out;
 	}
+	/* Not really sure what this loop does beside just incremening i*/
 	for (cnt = 1; i < n_edges; cnt++, i++) {
 	    if (le0 != (le1 = getmainedge((e1 = edges[i]))))
 		break;

@@ -20,6 +20,8 @@
  */
 
 #include "dot.h"
+#include <omp.h>
+#include "advisor-annotate.h"
 
 /* #define DEBUG */
 #define MARK(v)		(ND_mark(v))
@@ -823,6 +825,17 @@ static void transpose(graph_t * g, int reverse)
     } while (delta >= 1);
 }
 
+int minicross_work(graph_t* g, int iter, int trying, int best_cross, int cur_cross) {
+	mincross_step(g, iter);
+	if ((cur_cross = ncross(g)) <= best_cross) {
+		save_best(g);
+		if (cur_cross < Convergence * best_cross)
+			trying = 0;
+		best_cross = cur_cross;
+	}
+}
+
+
 static int mincross(graph_t * g, int startpass, int endpass, int doBalance)
 {
     int maxthispass, iter, trying, pass;
@@ -833,6 +846,7 @@ static int mincross(graph_t * g, int startpass, int endpass, int doBalance)
 	save_best(g);
     } else
 	cur_cross = best_cross = INT_MAX;
+	ANNOTATE_SITE_BEGIN(mincross);
     for (pass = startpass; pass <= endpass; pass++) {
 	if (pass <= 1) {
 	    maxthispass = MIN(4, MaxIter);
@@ -854,26 +868,30 @@ static int mincross(graph_t * g, int startpass, int endpass, int doBalance)
 	    cur_cross = best_cross;
 	}
 	trying = 0;
-	for (iter = 0; iter < maxthispass; iter++) {
-	    if (Verbose)
-		fprintf(stderr,
-			"mincross: pass %d iter %d trying %d cur_cross %d best_cross %d\n",
-			pass, iter, trying, cur_cross, best_cross);
-	    if (trying++ >= MinQuit)
-		break;
-	    if (cur_cross == 0)
-		break;
-	    mincross_step(g, iter);
-	    if ((cur_cross = ncross(g)) <= best_cross) {
-		save_best(g);
-		if (cur_cross < Convergence * best_cross)
-		    trying = 0;
-		best_cross = cur_cross;
-	    }
+	ANNOTATE_ITERATION_TASK(mincross_step);
+	{
+		for (iter = 0; iter < maxthispass; iter++) {
+			if (Verbose)
+				fprintf(stderr,
+					"mincross: pass %d iter %d trying %d cur_cross %d best_cross %d\n",
+					pass, iter, trying, cur_cross, best_cross);
+			if (trying++ >= MinQuit)
+				break;
+			if (cur_cross == 0)
+				break;
+			mincross_step(g, iter);
+			if ((cur_cross = ncross(g)) <= best_cross) {
+				save_best(g);
+				if (cur_cross < Convergence * best_cross)
+					trying = 0;
+				best_cross = cur_cross;
+			}
+		}
 	}
 	if (cur_cross == 0)
 	    break;
     }
+	ANNOTATE_SITE_END();
     if (cur_cross > best_cross)
 	restore_best(g);
     if (best_cross > 0) {
@@ -1625,6 +1643,13 @@ static void reorder(graph_t * g, int r, int reverse, int hasfixed)
     }
 }
 
+void minicross_step_work(int r,int dir,graph_t * g, int reverse) {
+	int other, hasfixed;
+	other = r - dir;
+	hasfixed = medians(g, r, other);
+	reorder(g, r, reverse, hasfixed);
+}
+
 static void mincross_step(graph_t * g, int pass)
 {
     int r, other, first, last, dir;
@@ -1656,12 +1681,15 @@ static void mincross_step(graph_t * g, int pass)
 	    first++;
 	dir = -1;
     }
-
+	ANNOTATE_SITE_BEGIN(minicross_step);
     for (r = first; r != last + dir; r += dir) {
-	other = r - dir;
-	hasfixed = medians(g, r, other);
-	reorder(g, r, reverse, hasfixed);
+		ANNOTATE_ITERATION_TASK(minicross_step_work);
+		minicross_step_work(r, dir, g, reverse);
+	//other = r - dir;
+	//hasfixed = medians(g, r, other);
+	//reorder(g, r, reverse, hasfixed);
     }
+	ANNOTATE_SITE_END()
     transpose(g, NOT(reverse));
 }
 

@@ -16,9 +16,11 @@
  */
 
 #include "config.h"
-
+#include <advisor-annotate.h>
 #include "gvc.h"
 #include "gvio.h"
+#include "omp.h"
+#include <math.h>
 
 #ifdef WIN32_DLL
 __declspec(dllimport) boolean MemTest;
@@ -94,12 +96,20 @@ static graph_t *create_test_graph(void)
 
 int main(int argc, char **argv)
 {
+    double start = omp_get_wtime();
     graph_t *prev = NULL;
+    double runs[10];
+    double dotruns[10];
+    int run = 0;
+    double difference, before;
     int r, rc = 0;
 
     Gvc = gvContextPlugins(lt_preloaded_symbols, DEMAND_LOADING);
     GvExitOnUsage = 1;
     gvParseArgs(Gvc, argc, argv);
+    for (int i = 0; i < argc; i++) {
+        printf("arg %d is %s\n", i, argv[i]);
+    }
 #ifndef _WIN32
     signal(SIGUSR1, gvToggle);
     signal(SIGINT, intr);
@@ -107,7 +117,6 @@ int main(int argc, char **argv)
     signal(SIGFPE, fperr);
 #endif
 #endif
-
     if (MemTest) {
 	while (MemTest--) {
 	    /* Create a test graph */
@@ -129,14 +138,35 @@ int main(int argc, char **argv)
 		gvFreeLayout(Gvc, prev);
 		agclose(prev);
 	    }
+        before = omp_get_wtime( );
 	    gvLayoutJobs(Gvc, G);  /* take layout engine from command line */
+        dotruns[run] = omp_get_wtime() - before;
 	    gvRenderJobs(Gvc, G);
             gvFinalize(Gvc);
 	    r = agreseterrors();
 	    rc = MAX(rc,r);
 	    prev = G;
+        difference = omp_get_wtime( ) - before;
+        runs[run] = difference;
+        run++;
+        printf("completed runtime [%.3f, %.3f] secs.\n",
+            dotruns[run-1],
+            difference);
 	}
     }
     r = gvFreeContext(Gvc);
+    double meantime = 0;
+    double dottime = 0;
+    double count = 0;
+    for (int i = 0; i < run; i++) {
+        meantime += runs[i];
+        dottime += dotruns[i];
+        count++;
+    }
+    meantime = meantime / (count);
+    dottime = dottime / (count);
+    printf("completed runs with mean of %.3f out of %.3f secs.\n",
+        dottime,
+        meantime );
     return (MAX(rc,r));
 }

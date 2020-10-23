@@ -18,6 +18,10 @@
 
 #include "render.h"
 #include <setjmp.h>
+#include <advisor-annotate.h>
+#include <time.h>
+#include <omp.h>
+#include <xkeycheck.h>
 
 static int init_graph(graph_t *);
 static void dfs_cutval(node_t * v, edge_t * par);
@@ -157,10 +161,13 @@ static edge_t *leave_edge(void)
 	    if (++cnt >= Search_size)
 		return rv;
 	}
-	S_i++;
+        S_i++;
+	
     }
     if (j > 0) {
-	S_i = 0;
+    {
+        S_i = 0;
+    }
 	while (S_i < j) {
 	    if (ED_cutvalue(f = Tree_edge.list[S_i]) < 0) {
 		if (rv) {
@@ -171,7 +178,9 @@ static edge_t *leave_edge(void)
 		if (++cnt >= Search_size)
 		    return rv;
 	    }
-	    S_i++;
+        {
+        S_i++;
+        }
 	}
     }
     return rv;
@@ -202,6 +211,33 @@ static void dfs_enter_outedge(node_t * v)
 	    dfs_enter_outedge(agtail(e));
 }
 
+static edge_t * dfs_enter_outedge_parallel(node_t* v,int SLACK, edge_t * ENTER, int LOW, int LIM)
+{
+    int i, slack;
+    edge_t* e;
+
+    for (i = 0; (e = ND_out(v).list[i]); i++) {
+        if (TREE_EDGE(e) == FALSE) {
+            if (!SEQ(LOW, ND_lim(aghead(e)), LIM)) {
+                slack = SLACK(e);
+                if ((slack < SLACK) || (ENTER == NULL)) {
+                    ENTER = e;
+                    SLACK = slack;
+                }
+            }
+        }
+        else if (ND_lim(aghead(e)) < ND_lim(v))
+            ENTER = dfs_enter_outedge_parallel(aghead(e,), SLACK, ENTER, LOW, LIM);
+    }
+    for (i = 0; (e = ND_tree_in(v).list[i]) && (SLACK > 0); i++)
+        if (ND_lim(agtail(e)) < ND_lim(v))
+            ENTER = dfs_enter_outedge_parallel(agtail(e,), SLACK, ENTER, LOW, LIM);
+
+    return ENTER;
+}
+
+
+
 static void dfs_enter_inedge(node_t * v)
 {
     int i, slack;
@@ -222,6 +258,31 @@ static void dfs_enter_inedge(node_t * v)
     for (i = 0; (e = ND_tree_out(v).list[i]) && (Slack > 0); i++)
 	if (ND_lim(aghead(e)) < ND_lim(v))
 	    dfs_enter_inedge(aghead(e));
+}
+
+static edge_t * dfs_enter_inedge_parallel(node_t* v,int SLACK, edge_t * ENTER, int LOW, int LIM)
+{
+    int i, slack;
+    edge_t* e;
+
+    for (i = 0; (e = ND_in(v).list[i]); i++) {
+        if (TREE_EDGE(e) == FALSE) {
+            if (!SEQ(LOW, ND_lim(agtail(e)), LIM)) {
+                slack = SLACK(e);
+                if ((slack < SLACK) || (ENTER == NULL)) {
+                    ENTER = e;
+                    SLACK = slack;
+                }
+            }
+        }
+        else if (ND_lim(agtail(e)) < ND_lim(v))
+            ENTER = dfs_enter_inedge_parallel(agtail(e),SLACK, ENTER, LOW, LIM);
+    }
+    for (i = 0; (e = ND_tree_out(v).list[i]) && (SLACK > 0); i++)
+        if (ND_lim(aghead(e)) < ND_lim(v))
+            ENTER = dfs_enter_inedge_parallel(aghead(e), SLACK, ENTER, LOW , LIM);
+
+    return ENTER;
 }
 
 static edge_t *enter_edge(edge_t * e)
@@ -561,12 +622,16 @@ static Agnode_t *treeupdate(Agnode_t * v, Agnode_t * w, int cutvalue, int dir)
     return v;
 }
 
+omp_lock_t rerank_writelock;
+
 static void rerank(Agnode_t * v, int delta)
 {
     int i;
     edge_t *e;
-
-    ND_rank(v) -= delta;
+#pragma omp critical 
+    {
+        ND_rank(v) -= delta;
+    }
     for (i = 0; (e = ND_tree_out(v).list[i]); i++)
 	if (e != ND_par(v))
 	    rerank(aghead(e), delta);
@@ -575,45 +640,47 @@ static void rerank(Agnode_t * v, int delta)
 	    rerank(agtail(e), delta);
 }
 
+
+
 /* e is the tree edge that is leaving and f is the nontree edge that
  * is entering.  compute new cut values, ranks, and exchange e and f.
  */
 static void 
 update(edge_t * e, edge_t * f)
 {
-    int cutvalue, delta;
-    Agnode_t *lca;
+        int cutvalue, delta;
+        Agnode_t* lca;
 
-    delta = SLACK(f);
-    /* "for (v = in nodes in tail side of e) do ND_rank(v) -= delta;" */
-    if (delta > 0) {
-	int s;
-	s = ND_tree_in(agtail(e)).size + ND_tree_out(agtail(e)).size;
-	if (s == 1)
-	    rerank(agtail(e), delta);
-	else {
-	    s = ND_tree_in(aghead(e)).size + ND_tree_out(aghead(e)).size;
-	    if (s == 1)
-		rerank(aghead(e), -delta);
-	    else {
-		if (ND_lim(agtail(e)) < ND_lim(aghead(e)))
-		    rerank(agtail(e), delta);
-		else
-		    rerank(aghead(e), -delta);
-	    }
-	}
-    }
+        delta = SLACK(f);
+        /* "for (v = in nodes in tail side of e) do ND_rank(v) -= delta;" */
+        if (delta > 0) {
+            int s;
+            s = ND_tree_in(agtail(e)).size + ND_tree_out(agtail(e)).size;
+            if (s == 1)
+                rerank(agtail(e), delta);
+            else {
+                s = ND_tree_in(aghead(e)).size + ND_tree_out(aghead(e)).size;
+                if (s == 1)
+                    rerank(aghead(e), -delta);
+                else {
+                    if (ND_lim(agtail(e)) < ND_lim(aghead(e)))
+                        rerank(agtail(e), delta);
+                    else
+                        rerank(aghead(e), -delta);
+                }
+            }
+        }
 
-    cutvalue = ED_cutvalue(e);
-    lca = treeupdate(agtail(f), aghead(f), cutvalue, 1);
-    if (treeupdate(aghead(f), agtail(f), cutvalue, 0) != lca) {
-	agerr(AGERR, "update: mismatched lca in treeupdates\n");
-	longjmp (jbuf, 1);
-    }
-    ED_cutvalue(f) = -cutvalue;
-    ED_cutvalue(e) = 0;
-    exchange_tree_edges(e, f);
-    dfs_range(lca, ND_par(lca), ND_low(lca));
+        cutvalue = ED_cutvalue(e);
+        lca = treeupdate(agtail(f), aghead(f), cutvalue, 1);
+        if (treeupdate(aghead(f), agtail(f), cutvalue, 0) != lca) {
+            agerr(AGERR, "update: mismatched lca in treeupdates\n");
+            longjmp(jbuf, 1);
+        }
+        ED_cutvalue(f) = -cutvalue;
+        ED_cutvalue(e) = 0;
+        exchange_tree_edges(e, f);
+        dfs_range(lca, ND_par(lca), ND_low(lca));
 }
 
 static void scan_and_normalize(void)
@@ -812,6 +879,307 @@ graphSize (graph_t * g, int* nn, int* ne)
     *ne = nedges;
 }
 
+
+
+typedef struct {
+    struct edge_t* array[20000];
+    int used;
+    int size;
+} Array;
+
+void initEdgeArray(Array* a, size_t InitialSize) {
+    a->used = 0;
+    a->size = InitialSize;
+}
+
+void insertArray(Array *a, edge_t *element) {
+    if (a->used == a->size) {
+        a->size *= 2;
+        *a->array = realloc(*a->array, a->size * sizeof(edge_t *));
+    }
+    a->array[a->used++] = element;
+    //printf("current size %d of %d\n", a->used, a->size);
+}
+void freeArray(Array* a) {
+    //free(a->array);
+    a->used = a->size = 0;
+}
+
+int edge_count;
+
+void get_rank2_edges(Array *workload) {
+    //initEdgeArray(&workload, 200);
+    edge_t * f, * rv = NULL;
+    edge_t* prev = NULL;
+    int j, cnt = 0;
+    j = S_i;
+        while (S_i < Tree_edge.size) {
+            if (ED_cutvalue(f = Tree_edge.list[S_i]) < 0) {
+                if (rv) {
+                    if (ED_cutvalue(rv) > ED_cutvalue(f))
+                        rv = f;
+                }
+                else
+                    rv = Tree_edge.list[S_i];
+                if (++cnt >= Search_size) {
+                    //printf("adding edge, %d\n", workload->used);
+                    insertArray(workload, rv);
+                    rv = NULL;
+                }
+            }
+            S_i++;
+        }
+        //printf("j is %d\n", j);
+        if (j > 0) {
+            S_i = 0;
+            while (S_i < j) {
+                if (ED_cutvalue(f = Tree_edge.list[S_i]) < 0) {
+                    if (rv) {
+                        if (ED_cutvalue(rv) > ED_cutvalue(f))
+                            rv = f;
+                    }
+                    else
+                        rv = Tree_edge.list[S_i];
+                    if (++cnt >= Search_size) {
+                        //printf("load from other loop");
+                        //printf("adding edge, %d\n", workload->used);
+                        insertArray(workload, rv);
+                        rv = NULL;
+                    }
+                }
+                S_i++;
+            }
+        }
+        if (rv) {
+            insertArray(workload, rv);
+        }
+}
+
+static void rank2_work(edge_t* e, int iter, int maxiter) {
+    edge_t* f = NULL;
+    f = enter_edge(e);
+    update(e, f);
+}
+
+static void rank2_work_2(edge_t* e, int iter, int maxiter, Array* newEdge) {
+    edge_t* f = NULL;
+    f = enter_edge(e);
+    //update(e, f);
+}
+
+
+void rank2_load_balancer(Array* workload, int tasker, int size) {
+    int start = tasker * size;
+    int end = start + size;
+    if (end > workload->used)
+        end = workload->used;
+    for (start; start < end; start++) {
+        #pragma omp critical 
+            rank2_work(workload->array[start], start, MaxIter);
+    }
+}
+void parallel_processing_1(int maxiter) {
+    Array edges;
+    initEdgeArray(&edges, 20000);
+    get_rank2_edges(&edges);
+    ANNOTATE_SITE_BEGIN(parallel_processing);
+    for (int i = 0; i < edges.used; i++) {
+        ANNOTATE_TASK_BEGIN(update_edge)
+        rank2_work(edges.array[i], i, maxiter);
+        ANNOTATE_TASK_END()
+    }
+    ANNOTATE_SITE_END();
+    //printf("Parallel Processing ::  %d edges\n", edges.used);
+    freeArray(&edges);
+}
+
+int printed = 0;
+int printed_2 = 0;
+
+void parallel_processing_3(int maxiter) {
+    int sj, sstop, tstop;
+    int thread_slack, thread_low, thread_lim, outsearch;
+    edge_t * thread_enter;
+    Agnode_t* lca;
+    sj = -1;     // shared loop counter
+    sstop = 0;   // shared stopping condition
+
+    // work
+    omp_set_num_threads(2);
+#pragma omp parallel private(tstop,thread_slack, thread_low, thread_lim,outsearch,lca)
+    {
+            while (!sstop) {
+                edge_t* e, * f;
+                node_t* v;
+#pragma omp critical
+                {
+                    e = leave_edge();
+                }
+
+                while (1)
+                {
+                    if (e == NULL)
+                        break;
+//#pragma omp critical
+                    {
+                        sj++;
+                    }
+                    outsearch = 0;
+                    /* v is the down node */
+                    if (ND_lim(agtail(e)) < ND_lim(aghead(e))) {
+                        v = agtail(e);
+                        outsearch = FALSE;
+                    }
+                    else {
+                        v = aghead(e);
+                        outsearch = TRUE;
+                    }
+                    Enter = NULL;
+                    Slack = INT_MAX;
+                    Low = ND_low(v);
+                    Lim = ND_lim(v);
+                    if (outsearch) {
+                        dfs_enter_outedge(v);
+                    }
+                    else {
+                        dfs_enter_inedge(v);
+                    }
+                    f = Enter;
+                    if (f != NULL) {
+                        printf("updating iter :: %d\n", sj);
+                        int cutvalue, delta;
+
+                        delta = SLACK(f);
+                        /* "for (v = in nodes in tail side of e) do ND_rank(v) -= delta;" */
+                        if (delta > 0) {
+                            int s;
+                            s = ND_tree_in(agtail(e)).size + ND_tree_out(agtail(e)).size;
+                            /*
+                            if (s == 1)
+                                rerank(agtail(e), delta);
+                            else {
+                                s = ND_tree_in(aghead(e)).size + ND_tree_out(aghead(e)).size;
+                                if (s == 1)
+                                    rerank(aghead(e), -delta);
+                                else {
+                                    if (ND_lim(agtail(e)) < ND_lim(aghead(e)))
+                                        rerank(agtail(e), delta);
+                                    else
+                                        rerank(aghead(e), -delta);
+                                }
+                            }*/
+                        }
+
+                        cutvalue = ED_cutvalue(e);
+                        lca = treeupdate(agtail(f), aghead(f), cutvalue, 1);
+                        if (treeupdate(aghead(f), agtail(f), cutvalue, 0) != lca) {
+                            agerr(AGERR, "update: mismatched lca in treeupdates\n");
+                            //longjmp(jbuf, 1);
+                        }
+                        ED_cutvalue(f) = -cutvalue;
+                        ED_cutvalue(e) = 0;
+                        exchange_tree_edges(e, f);
+                        //dfs_range(lca, ND_par(lca), ND_low(lca));
+                    }
+
+                    if (sj >= maxiter)
+                        break;
+                    if (sstop) {
+                        break;
+                    }
+#pragma omp critical
+                    {
+                        e = leave_edge();
+                    }
+                    if (e == NULL)
+                        break;
+                }
+                {
+                    sstop = 1;
+//#pragma omp flush(sstop)
+                }
+            }
+    }
+}
+
+
+void parallel_processing_2(int maxiter) {
+    // go get edges
+    Array edges;
+    struct edge_t* fedges[20000];
+    int chunksize = 50;
+    initEdgeArray(&edges, 20000);
+    //initEdgeArray(&fedges, 20000);
+    get_rank2_edges(&edges);
+    struct edge_t* sedges[20000];
+    for(int k = 0 ;k < edges.used;k++)
+        sedges[k] = edges.array[k];
+    // 
+    //ANNOTATE_SITE_BEGIN(parallel_processing_static);
+    // setup private variables
+    int i=0,start,end, outsearch = 0, thread_slack,thread_low,thread_lim;
+    edge_t* f , * e = NULL, * thread_enter;
+    node_t* v;
+    // debug for start of parallel section
+    if (edges.used > 0)
+        printf("found some :: %d\n",edges.used);
+    // set thread and run in parallel
+    omp_set_num_threads(1);
+    #pragma omp parallel for default(none) private(v,outsearch,Low,Lim,thread_slack,thread_enter) shared(sedges) schedule(static,20)
+    for (i = 0; i < edges.used; i++) {
+        if (printed == 0 && omp_get_thread_num() == 0) {
+            printf("running %d threads\n", omp_get_num_threads());
+            printed = 1;
+        }
+            edge_t * z = sedges[i];
+            // code is sequential to enter_edge to get f
+            /* v is the down node */
+            if (ND_lim(agtail(z)) < ND_lim(aghead(z))) {
+                v = agtail(z);
+                outsearch = FALSE;
+            }
+            else {
+                v = aghead(z);
+                outsearch = TRUE;
+            }
+            thread_enter = NULL;
+            thread_slack = INT_MAX;
+            Low = ND_low(v);
+            Lim = ND_lim(v);
+            // had to rewrite dfs_enter as it was using a gloabl varaible for state control between recurses
+            if (outsearch)
+                thread_enter = dfs_enter_outedge_parallel(v, thread_slack, thread_enter, Low, Lim);
+            else
+                thread_enter = dfs_enter_inedge_parallel(v,thread_slack, thread_enter, Low, Lim);
+            // we have found f
+            edge_t * y = thread_enter;
+            // try to update e, f but will cause an memory error, where sedges will be overwritten to void in the process at some point.
+            // either in rerank (memory dellocate) or in cause a stack overflow in dfs_range when accessing some other v
+            printf("updating iter :: %d on #%d\n", i, omp_get_thread_num());
+            update(z, y);
+    }
+    if (edges.used > 0) {
+        printf("updated some :: %d\n", edges.used);
+    }
+    //ANNOTATE_SITE_END();
+    printf("Parallel Processing :: %d edges\n", edges.used);
+    freeArray(&edges);
+}
+
+
+void serial_processing(int maxiter) {
+    edge_t* e, * f;
+    int iter = 0;
+    while ((e = leave_edge())) {
+        f = enter_edge(e);
+        update(e, f);
+        iter++;
+        if (iter >= maxiter)
+            break;
+    }
+    //printf("Serial Processing :: %d edges\n", iter);
+}
+
 /* rank:
  * Apply network simplex to rank the nodes in a graph.
  * Uses ED_minlen as the internode constraint: if a->b with minlen=ml,
@@ -829,6 +1197,7 @@ int rank2(graph_t * g, int balance, int maxiter, int search_size)
     int iter = 0, feasible;
     char *ns = "network simplex: ";
     edge_t *e, *f;
+
 
 #ifdef DEBUG
     check_cycles(g);
@@ -861,20 +1230,39 @@ int rank2(graph_t * g, int balance, int maxiter, int search_size)
 	freeTreeList (g);
 	return 1;
     }
+    clock_t before = clock();
+    ///*
+    // collect negative edges
+    //parallel_processing_1(maxiter);
+    //parallel_processing_3(maxiter);
+    //clock_t difference = clock() - before;
+    //*/
+
+
+    // target loop
+   
     while ((e = leave_edge())) {
-	f = enter_edge(e);
-	update(e, f);
-	iter++;
-	if (Verbose && (iter % 100 == 0)) {
-	    if (iter % 1000 == 100)
-		fputs(ns, stderr);
-	    fprintf(stderr, "%d ", iter);
-	    if (iter % 1000 == 0)
-		fputc('\n', stderr);
-	}
-	if (iter >= maxiter)
-	    break;
+	    f = enter_edge(e);
+	    update(e, f);
+	    iter++;
+	    if (Verbose && (iter % 100 == 0)) {
+	        if (iter % 1000 == 100)
+		    fputs(ns, stderr);
+	        fprintf(stderr, "%d ", iter);
+	        if (iter % 1000 == 0)
+		    fputc('\n', stderr);
+	    }
+	    if (iter >= maxiter)
+	        break;
     }
+    if (iter > 0)
+     printf("completed %d iters\n", iter);
+    clock_t difference = clock() - before;
+    
+    /*
+    printf("Time taken to complete processing was %d.%d secs\n",
+        difference / 1000, difference % 1000);
+    */
     switch (balance) {
     case 1:
 	TB_balance();
@@ -990,16 +1378,23 @@ static int dfs_range(node_t * v, edge_t * par, int low)
 {
     edge_t *e;
     int i, lim;
-
     lim = low;
     ND_par(v) = par;
     ND_low(v) = low;
-    for (i = 0; (e = ND_tree_out(v).list[i]); i++)
-	if (e != par)
-	    lim = dfs_range(aghead(e), e, lim);
-    for (i = 0; (e = ND_tree_in(v).list[i]); i++)
-	if (e != par)
-	    lim = dfs_range(agtail(e), e, lim);
+    ANNOTATE_SITE_BEGIN(dfs_range)
+        for (i = 0; (e = ND_tree_out(v).list[i]); i++) {
+            ANNOTATE_ITERATION_TASK(dfs_range)
+                if (e != par)
+                    lim = dfs_range(aghead(e), e, lim);
+        }
+    ANNOTATE_SITE_END()
+    ANNOTATE_SITE_BEGIN(dfs_range)
+        for (i = 0; (e = ND_tree_in(v).list[i]); i++) {
+            ANNOTATE_ITERATION_TASK(dfs_range)
+                if (e != par)
+                    lim = dfs_range(agtail(e), e, lim);
+        }
+    ANNOTATE_SITE_END()
     ND_lim(v) = lim;
     return lim + 1;
 }

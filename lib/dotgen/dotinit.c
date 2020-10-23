@@ -16,6 +16,7 @@
 #include "dot.h"
 #include "pack.h"
 #include "aspect.h"
+#include <advisor-annotate.h>
 
 static void
 dot_init_subg(graph_t * g, graph_t* droot)
@@ -295,6 +296,29 @@ attach_phase_attrs (Agraph_t * g, int maxphase)
     }
 }
 
+static void dotLayoutIter(Agraph_t * g, aspect_t * asp,aspect_t aspect, int phase) {
+    dot_rank(g, asp);
+    if (phase == 1) {
+        attach_phase_attrs(g, 1);
+        return;
+    }
+    if (aspect.badGraph) {
+        agerr(AGWARN, "dot does not support the aspect attribute for disconnected graphs or graphs with clusters\n");
+        asp = NULL;
+        aspect.nextIter = 0;
+    }
+    dot_mincross(g, (asp != NULL));
+    if (phase == 2) {
+        attach_phase_attrs(g, 2);
+        return;
+    }
+    dot_position(g, asp);
+    if (phase == 3) {
+        attach_phase_attrs(g, 2);  /* positions will be attached on output */
+        return;
+    }
+}
+
 static void dotLayout(Agraph_t * g)
 {
     aspect_t aspect;
@@ -306,30 +330,13 @@ static void dotLayout(Agraph_t * g)
 
     dot_init_subg(g,g);
     dot_init_node_edge(g);
-
-    do {
-        dot_rank(g, asp);
-	if (maxphase == 1) {
-	    attach_phase_attrs (g, 1);
-	    return;
-	}
-	if (aspect.badGraph) {
-	    agerr(AGWARN, "dot does not support the aspect attribute for disconnected graphs or graphs with clusters\n");
-	    asp = NULL;
-	    aspect.nextIter = 0;
-	}
-        dot_mincross(g, (asp != NULL));
-	if (maxphase == 2) {
-	    attach_phase_attrs (g, 2);
-	    return;
-	}
-        dot_position(g, asp);
-	if (maxphase == 3) {
-	    attach_phase_attrs (g, 2);  /* positions will be attached on output */
-	    return;
-	}
+    //ANNOTATE_SITE_BEGIN(dotLayout);
+  do {
+   //ANNOTATE_ITERATION_TASK(dotLayoutIter);
+      dotLayoutIter(g, asp, aspect, maxphase);
 	aspect.nPasses--;
     } while (aspect.nextIter && aspect.nPasses);
+    //ANNOTATE_SITE_END();
     if (GD_flags(g) & NEW_RANK)
 	removeFill (g);
     dot_sameports(g);
