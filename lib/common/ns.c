@@ -964,7 +964,7 @@ static void rank2_work(edge_t* e, int iter, int maxiter) {
 static void rank2_work_2(edge_t* e, int iter, int maxiter, Array* newEdge) {
     edge_t* f = NULL;
     f = enter_edge(e);
-    //update(e, f);
+    update(e, f);
 }
 
 
@@ -974,10 +974,11 @@ void rank2_load_balancer(Array* workload, int tasker, int size) {
     if (end > workload->used)
         end = workload->used;
     for (start; start < end; start++) {
-        #pragma omp critical 
-            rank2_work(workload->array[start], start, MaxIter);
+        rank2_work(workload->array[start], start, MaxIter);
     }
 }
+
+
 void parallel_processing_1(int maxiter) {
     Array edges;
     initEdgeArray(&edges, 20000);
@@ -1123,41 +1124,20 @@ void parallel_processing_2(int maxiter) {
     // debug for start of parallel section
     if (edges.used > 0)
         printf("found some :: %d\n",edges.used);
+    int size = 50;
     // set thread and run in parallel
     omp_set_num_threads(1);
-    #pragma omp parallel for default(none) private(v,outsearch,Low,Lim,thread_slack,thread_enter) shared(sedges) schedule(static,20)
+    //#pragma omp parallel for default(none) private(edges,i,size)
+    ANNOTATE_SITE_BEGIN(parallel_processing_2);
     for (i = 0; i < edges.used; i++) {
         if (printed == 0 && omp_get_thread_num() == 0) {
             printf("running %d threads\n", omp_get_num_threads());
             printed = 1;
         }
-            edge_t * z = sedges[i];
-            // code is sequential to enter_edge to get f
-            /* v is the down node */
-            if (ND_lim(agtail(z)) < ND_lim(aghead(z))) {
-                v = agtail(z);
-                outsearch = FALSE;
-            }
-            else {
-                v = aghead(z);
-                outsearch = TRUE;
-            }
-            thread_enter = NULL;
-            thread_slack = INT_MAX;
-            Low = ND_low(v);
-            Lim = ND_lim(v);
-            // had to rewrite dfs_enter as it was using a gloabl varaible for state control between recurses
-            if (outsearch)
-                thread_enter = dfs_enter_outedge_parallel(v, thread_slack, thread_enter, Low, Lim);
-            else
-                thread_enter = dfs_enter_inedge_parallel(v,thread_slack, thread_enter, Low, Lim);
-            // we have found f
-            edge_t * y = thread_enter;
-            // try to update e, f but will cause an memory error, where sedges will be overwritten to void in the process at some point.
-            // either in rerank (memory dellocate) or in cause a stack overflow in dfs_range when accessing some other v
-            printf("updating iter :: %d on #%d\n", i, omp_get_thread_num());
-            update(z, y);
+        ANNOTATE_ITERATION_TASK(rank2_load_balancer)
+        rank2_load_balancer(&edges.array, i, size);
     }
+    ANNOTATE_SITE_END();
     if (edges.used > 0) {
         printf("updated some :: %d\n", edges.used);
     }
@@ -1234,13 +1214,14 @@ int rank2(graph_t * g, int balance, int maxiter, int search_size)
     ///*
     // collect negative edges
     //parallel_processing_1(maxiter);
+    parallel_processing_2(maxiter);
     //parallel_processing_3(maxiter);
-    //clock_t difference = clock() - before;
+    clock_t difference = clock() - before;
     //*/
 
 
     // target loop
-   
+   /*
     while ((e = leave_edge())) {
 	    f = enter_edge(e);
 	    update(e, f);
@@ -1258,7 +1239,7 @@ int rank2(graph_t * g, int balance, int maxiter, int search_size)
     if (iter > 0)
      printf("completed %d iters\n", iter);
     clock_t difference = clock() - before;
-    
+    */
     /*
     printf("Time taken to complete processing was %d.%d secs\n",
         difference / 1000, difference % 1000);
